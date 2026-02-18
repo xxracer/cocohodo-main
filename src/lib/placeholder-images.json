@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Bright, airy cafe interior flooded with natural sunlight from large windows, featuring light wood tables and minimalist white chairs.",
+      "imageUrl": "https://static.wixstatic.com/media/c5947c_3b01f3611b114f1991eb0a95cbff2b36~mv2.jpg",
+      "imageHint": "bright minimalist cafe"
+    },
+    {
+      "id": "about-image",
+      "description": "The interior of a warm and inviting coffee shop.",
+      "imageUrl": "https://static.wixstatic.com/media/c5947c_4662552029214b10b6dfc74929c13f67~mv2.jpg",
+      "imageHint": "cafe interior"
+    },
+    {
+      "id": "walnut-pastry-image",
+      "description": "A close-up of a delicious walnut-shaped pastry against a light background.",
+      "imageUrl": "https://images.unsplash.com/photo-1769615020959-8a17bd77e849?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3YWxudXQlMjBwYXN0cnl8ZW58MHx8fHwxNzcxMjU0NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "walnut pastry minimalist"
+    },
+    {
+      "id": "review-section-image",
+      "description": "A beautiful shot of the cafe's seating area, with comfortable chairs and warm lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1559305419-5f4a18453181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYWZlJTIwc2VhdGluZyUyMGFyZWF8ZW58MHx8fHwxNzczMTk3MjMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cafe seating"
+    },
+    {
+      "id": "instagram-1",
+      "description": "Close up of a golden walnut pastry on a white plate.",
+      "imageUrl": "https://images.unsplash.com/photo-1621939512534-a0352de59a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXN0cnklMjBtaW5pbWFsaXN0fGVufDB8fHx8fDE3NzEzMTY4NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "walnut pastry minimalist"
+    },
+    {
+      "id": "instagram-2",
+      "description": "Iced latte in a clear glass on a minimal background.",
+      "imageUrl": "https://images.unsplash.com/photo-1572491414333-915b29b6298e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpY2VkJTIwY29mZmVlJTIwYWVzdGhldGljfGVufDB8fHx8fDE3NzEzMTY5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iced coffee aesthetic"
+    },
+    {
+      "id": "instagram-3",
+      "description": "A corner of the bright cafe with a potted plant and a minimalist chair.",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmlnaHQlMjBjYWZlJTIwY29ybmVyfGVufDB8fHx8fDE3NzEzMTY5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bright cafe corner"
+    },
+    {
+      "id": "instagram-4",
+      "description": "A person's hand holding a clear glass with an iced coffee.",
+      "imageUrl": "https://images.unsplash.com/photo-1623354228799-b13a29ab1700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kJTIwaWNlZCUyMGNvZmZlZXxlbnwwfHx8fDE3NzEzMTcwMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hand iced coffee"
+    },
+    {
+      "id": "instagram-5",
+      "description": "A flat lay of coffee and pastries on a light wood table.",
+      "imageUrl": "https://images.unsplash.com/photo-1521302080221-5413158406f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYWZlJTIwZmxhdCUyMGxheXxlbnwwfHx8fDE3NzEzMTcwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cafe flat lay"
+    },
+    {
+      "id": "instagram-6",
+      "description": "The clean, terrazzo counter of the cafe.",
+      "imageUrl": "https://images.unsplash.com/photo-1617104679724-4299b6b77456?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZXJyYXp6byUyMGNvdW50ZXJ8ZW58MHx8fHwxNzcxMzE3MTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "terrazzo counter"
+    }
+  ]
+}
