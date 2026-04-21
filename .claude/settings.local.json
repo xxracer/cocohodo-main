@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.agorahouston.com)",
+      "WebFetch(domain:www.canva.com)",
+      "WebSearch",
+      "Bash(npm run *)",
+      "Bash(Get-Process -Name node -ErrorAction SilentlyContinue)",
+      "Bash(Stop-Process -Force)",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(pkill -f node)",
+      "Bash(killall node *)",
+      "Bash(netstat -ano)",
+      "Bash(kill -9 2784)",
+      "Bash(curl -s http://localhost:9002)",
+      "Bash(findstr :9002)",
+      "Bash(tasklist)",
+      "Bash(findstr 2784)"
+    ]
+  }
+}
