@@ -87,18 +87,16 @@ const beverageCategories = [
 
 const foodCategories = [
   {
-    title: "Signature Walnut Pastries (Hodo Gwaja)",
+    title: "Signature Pastries",
     icon: Croissant,
-    description: "Our famous Korean walnut-shaped pastries - Freshly baked daily!",
+    description: "Freshly baked favorites - perfect with any drink!",
     featured: true,
     items: [
-      { name: "Small Bag (9 pcs)", price: "$8.55" },
-      { name: "Medium Bag (15 pcs)", price: "$14.15" },
-      { name: "Large Bag (21 pcs)", price: "$18.95" },
-      { name: "X-Large Bag (30 pcs)", price: "$25.75" },
-      { name: "Small Box (36 pcs)", price: "$38.35" },
-      { name: "Medium Box (56 pcs)", price: "$56.45" },
-      { name: "Large Box (84 pcs)", price: "$76.95" },
+      { name: "Croissant", price: "$3.95" },
+      { name: "Chocolate Croissant", price: "$4.50" },
+      { name: "Almond Croissant", price: "$4.95" },
+      { name: "Danish", price: "$4.25" },
+      { name: "Muffin", price: "$3.75" },
     ]
   },
   {
@@ -251,7 +249,7 @@ export default function MenuSection() {
             Our Menu
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Crafted with care, inspired by tradition. From authentic Korean walnut pastries to artisanal coffee.
+            One café. Every craving. From specialty coffee drinks and sweet desserts to savory crepes, sandwiches, and more.
           </p>
           <div className="greek-divider max-w-md mx-auto mb-6" />
           <Button

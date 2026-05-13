@@ -75,18 +75,19 @@ export default function AboutSection() {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">
-                More Than Just a Coffee Shop
+                More Than a Coffee Shop
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Cocohodo Katy is a revival of the classic library cafe, infused with a touch of Korean heritage.
-                We began with a simple vision: to create a space where the aroma of freshly brewed coffee and
-                baked pastries mingles with the quiet rustle of turning pages.
+                Cocohodo is more than a place for coffee. We're a café built around variety, comfort, and community,
+                from sweet desserts and savory crepes to sandwiches, ice cream, and specialty coffee drinks.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Our name, <span className="font-semibold text-primary">Cocohodo</span>, pays homage to the
-                beloved Korean walnut pastry (<span className="font-medium italic">Hodo Gwaja</span>), a treat
-                that embodies warmth and delightful surprise. We bring that same spirit to every cup we pour
-                and every event we host, creating a haven for our community in Katy.
+                Whether you're here for a business meeting, a study session, a family outing, or a quick bite with the kids,
+                Cocohodo is a welcoming place for every kind of customer and every kind of craving.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                With sweet, savory, and specialty café favorites all in one place, Cocohodo brings people together
+                over good food, good drinks, and a relaxed community vibe.
               </p>
             </div>
 
@@ -105,7 +106,7 @@ export default function AboutSection() {
               ))}
             </div>
 
-            {/* Community section with avatars */}
+            {/* Rewards Program */}
             <div className="pt-4 border-t border-border">
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-2">
@@ -116,15 +117,15 @@ export default function AboutSection() {
                     <span className="text-[8px] text-white">🥐</span>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-primary border-2 border-background flex items-center justify-center">
-                    <span className="text-[8px] text-white">📚</span>
+                    <span className="text-[8px] text-white">🎁</span>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center">
                     <span className="text-[8px] text-white">❤️</span>
                   </div>
                 </div>
                 <div>
-                  <p className="font-medium text-primary text-sm">Join Our Community</p>
-                  <p className="text-xs text-muted-foreground">Coffee lovers, students, and friends</p>
+                  <p className="font-medium text-primary text-sm">Rewards for Our Regulars</p>
+                  <p className="text-xs text-muted-foreground">Ask about our rewards program and membership perks</p>
                 </div>
               </div>
             </div>

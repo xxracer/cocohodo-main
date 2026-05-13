@@ -15,7 +15,8 @@
       "Bash(curl -s http://localhost:9002)",
       "Bash(findstr :9002)",
       "Bash(tasklist)",
-      "Bash(findstr 2784)"
+      "Bash(findstr 2784)",
+      "Bash(npx next *)"
     ]
   }
 }

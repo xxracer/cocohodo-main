@@ -93,7 +93,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:contact@cocohodokaty.com" className="hover:text-primary transition-colors">contact@cocohodokaty.com</a>
+                <a href="mailto:sallyaguib@gmail.com" className="hover:text-primary transition-colors">sallyaguib@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -119,7 +119,7 @@ export default function Footer() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium">
-                  🥐 Walnut Pastry Boxes
+                  🥐 Dessert & Crepe Boxes
                 </span>
                 <span className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium">
                   ☕ Coffee Bar

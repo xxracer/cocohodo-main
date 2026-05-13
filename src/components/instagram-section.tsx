@@ -60,7 +60,7 @@ export default function InstagramSection() {
                 src={`https://www.instagram.com/p/${id}/embed`}
                 className="w-full h-full scale-110 group-hover:scale-100 transition-transform duration-500"
                 style={{ border: 'none', overflow: 'hidden' }}
-                allowTransparency={true}
+                allowtransparency="true"
                 allow="encrypted-media"
                 title={`Instagram Post ${id}`}
               />

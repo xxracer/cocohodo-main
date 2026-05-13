@@ -2,6 +2,30 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock } from "lucide-react";
 
+function DoorDashIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H9.803l-.443 2.252h5.341c.915 0 1.742.461 2.222 1.167l.078.128 1.013 3.167.046.13a2.632 2.632 0 01-2.48 3.458H9.455l-.443 2.252h7.29a6.1 6.1 0 005.77-4.064l.783-2.447.216-.87zM8.359 5.181H4.658l-.443 2.252h3.246l-1.703 8.665H2.971l-.443 2.252h7.289l.443-2.252H6.903l1.703-8.665h.442l1.311-2.252z"/>
+    </svg>
+  );
+}
+
+function GrubHubIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 16.5h-9a1.5 1.5 0 01-1.5-1.5V9a1.5 1.5 0 011.5-1.5h9A1.5 1.5 0 0118 9v6a1.5 1.5 0 01-1.5 1.5z"/>
+    </svg>
+  );
+}
+
+function UberEatsIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.36.54-.96.86-1.6.86H9.5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h5.54c.64 0 1.24.32 1.6.86l2.18 3.27c.32.48.32 1.12 0 1.6l-2.18 3.23z"/>
+    </svg>
+  );
+}
+
 export default function HeroSection() {
   // Recommended hero images from Unsplash (coffee shop aesthetic)
   // Option 1: Warm cozy cafe interior - https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80
@@ -31,24 +55,24 @@ export default function HeroSection() {
           {/* Tag */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-6">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-xs font-medium text-accent uppercase tracking-wide">Katy's Premier Coffee & Dessert Cafe</span>
+            <span className="text-xs font-medium text-accent uppercase tracking-wide">Coffee, Eatery, Dessert</span>
           </div>
 
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-            Where Stories
+            Coffee, Eatery
             <br />
-            <span className="text-accent">&</span> Coffee Blend
+            <span className="text-accent">&</span> Dessert
           </h1>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 mb-8 leading-relaxed">
-            Experience the perfect blend of Korean hospitality and cozy cafe culture.
-            Fresh walnut pastries, artisanal coffee, and a space that feels like home.
+            From sweet desserts and savory crepes to sandwiches and specialty coffee drinks,
+            everything you're craving, all in one place.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-3 mb-10">
+          <div className="flex flex-wrap gap-3 mb-6">
             <Button
               asChild
               size="lg"
@@ -69,6 +93,32 @@ export default function HeroSection() {
             </Button>
           </div>
 
+          {/* Delivery Apps */}
+          <div className="flex flex-wrap items-center gap-3 mb-10">
+            <span className="text-xs text-white/70 uppercase tracking-wide">Order online:</span>
+            <a
+              href="#"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
+            >
+              <DoorDashIcon className="w-4 h-4" />
+              DoorDash
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
+            >
+              <GrubHubIcon className="w-4 h-4" />
+              Grubhub
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
+            >
+              <UberEatsIcon className="w-4 h-4" />
+              Uber Eats
+            </a>
+          </div>
+
           {/* Info Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/20">
             <div className="flex items-start gap-3">
@@ -86,7 +136,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wide">Hours</p>
-                <p className="text-xs text-white/80 leading-snug">Mon-Thu: 8AM-8PM<br />Fri-Sat: 8AM-9PM</p>
+                <p className="text-xs text-white/80 leading-snug">Mon-Thu: 8AM-8PM<br />Fri-Sat: 8AM-9PM<br />Sun: 8AM-9PM</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -95,7 +145,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wide">Contact</p>
-                <p className="text-xs text-white/80 leading-snug">(832) 321-5849<br />Walk-ins welcome</p>
+                <p className="text-xs text-white/80 leading-snug">(832) 321-5849<br />walk ins welcomed</p>
               </div>
             </div>
           </div>

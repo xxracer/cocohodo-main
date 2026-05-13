@@ -21,7 +21,7 @@ const reviews = [
   {
     name: "Alexandra M.",
     rating: 5,
-    review: "An absolute gem in Katy! The Hodo Gwaja is a must-try, and the minimalist vibe is so refreshing. It's my new favorite study spot.",
+    review: "An absolute gem in Katy! The desserts are a must-try, and the vibe is so refreshing. It's my new favorite spot.",
     date: "2 weeks ago"
   },
   {
@@ -31,36 +31,18 @@ const reviews = [
     date: "1 month ago"
   },
   {
-    name: "Samantha P.",
-    rating: 4,
-    review: "Lovely staff and a beautiful, airy interior. The Matcha Latte was delicious. It can get a little busy, but that just speaks to how great it is.",
-    date: "3 weeks ago"
-  },
-  {
     name: "Brian C.",
     rating: 5,
-    review: "Finally, a coffee shop with real character! The attention to detail in the decor and the menu is incredible. The walnut pastries are dangerously good.",
+    review: "Finally, a coffee shop with real character! The attention to detail in the decor and the menu is incredible. The crepes are dangerously good.",
     date: "1 week ago"
   },
   {
     name: "Jennifer K.",
     rating: 5,
-    review: "Best Korean desserts in Katy! The Dubai chocolate crepes are amazing. Great place to relax or catch up with friends.",
+    review: "Best desserts in Katy! The Dubai chocolate crepes are amazing. Great place to relax or catch up with friends.",
     date: "4 days ago"
   },
 ];
-
-const reviewStats = {
-  average: 4.8,
-  total: 127,
-  distribution: [
-    { stars: 5, count: 98, percentage: 77 },
-    { stars: 4, count: 22, percentage: 17 },
-    { stars: 3, count: 5, percentage: 4 },
-    { stars: 2, count: 1, percentage: 1 },
-    { stars: 1, count: 1, percentage: 1 },
-  ]
-};
 
 export default function ReviewsSection() {
   return (
@@ -81,26 +63,25 @@ export default function ReviewsSection() {
           <div className="greek-divider max-w-md mx-auto mt-6" />
         </div>
 
-        {/* Stats Overview */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {/* Average Rating Card */}
-          <Card className="lg:col-span-1 elegant-shadow border-0 bg-gradient-to-br from-primary to-primary/80 text-white">
+        {/* Average Rating Card */}
+        <div className="flex justify-center mb-12">
+          <Card className="max-w-md w-full elegant-shadow border-0 bg-gradient-to-br from-primary to-primary/80 text-white">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-6xl font-bold">{reviewStats.average}</span>
+                <span className="text-6xl font-bold">5.0</span>
                 <div className="flex flex-col items-start">
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-5 h-5 ${i < Math.floor(reviewStats.average) ? "fill-accent text-accent" : "text-white/30"}`}
+                        className="w-5 h-5 fill-accent text-accent"
                       />
                     ))}
                   </div>
                   <span className="text-sm text-white/80">out of 5</span>
                 </div>
               </div>
-              <p className="text-white/90">{reviewStats.total} Google reviews</p>
+              <p className="text-white/90">Google reviews</p>
               <Button asChild variant="outline" className="mt-4 rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary transition-colors">
                 <Link
                   href="https://maps.google.com/?cid=3059696044019827179"
@@ -112,30 +93,6 @@ export default function ReviewsSection() {
                   <ExternalLink className="w-4 h-4" />
                 </Link>
               </Button>
-            </CardContent>
-          </Card>
-
-          {/* Rating Distribution */}
-          <Card className="lg:col-span-2 elegant-shadow border-0 bg-background">
-            <CardContent className="p-8">
-              <h3 className="text-lg font-semibold text-primary mb-6">Rating Breakdown</h3>
-              <div className="space-y-3">
-                {reviewStats.distribution.map((item) => (
-                  <div key={item.stars} className="flex items-center gap-4">
-                    <div className="flex items-center gap-1 w-20">
-                      <span className="text-sm font-medium text-foreground w-3">{item.stars}</span>
-                      <Star className="w-4 h-4 fill-primary text-primary" />
-                    </div>
-                    <div className="flex-1 h-3 bg-secondary rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-accent to-primary rounded-full transition-all duration-500"
-                        style={{ width: `${item.percentage}%` }}
-                      />
-                    </div>
-                    <span className="text-sm text-muted-foreground w-12 text-right">{item.percentage}%</span>
-                  </div>
-                ))}
-              </div>
             </CardContent>
           </Card>
         </div>
@@ -223,14 +180,14 @@ export default function ReviewsSection() {
                   <div className="w-2 h-2 rounded-full bg-accent mt-2" />
                   <div>
                     <p className="font-medium text-foreground">Hours</p>
-                    <p>Mon-Thu: 8AM-8PM | Fri-Sat: 8AM-9PM | Sun: 9AM-8PM</p>
+                    <p>Mon-Thu: 8AM-8PM | Fri-Sat: 8AM-9PM | Sun: 8AM-9PM</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2" />
                   <div>
                     <p className="font-medium text-foreground">Contact</p>
-                    <p>(832) 321-5849 | contact@cocohodokaty.com</p>
+                    <p>(832) 321-5849 | sallyaguib@gmail.com</p>
                   </div>
                 </div>
               </div>

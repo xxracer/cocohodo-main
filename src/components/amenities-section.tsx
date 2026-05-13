@@ -1,4 +1,4 @@
-import { Wifi, PersonStanding, Coffee, Moon, Clock, Book, Music, Wine } from 'lucide-react';
+import { Wifi, Coffee, Clock } from 'lucide-react';
 
 const amenities = [
   {
@@ -7,29 +7,9 @@ const amenities = [
     description: "Fast and reliable internet for remote work, study sessions, or browsing. We have got you covered with ample power outlets at every table.",
   },
   {
-    icon: PersonStanding,
-    title: "Walk-ins Welcome",
-    description: "No reservations needed. Our doors are always open to embrace spontaneous moments of joy and connection.",
-  },
-  {
     icon: Coffee,
     title: "Artisanal Coffee",
     description: "Ethically sourced beans, expertly roasted and brewed. Every cup tells a story of craftsmanship and care.",
-  },
-  {
-    icon: Moon,
-    title: "Open Late",
-    description: "Life does not have a curfew. Join us for extended hours – from morning coffee to evening wine.",
-  },
-  {
-    icon: Book,
-    title: "Library Atmosphere",
-    description: "A quiet haven filled with books. Perfect for studying, reading, or intimate conversations.",
-  },
-  {
-    icon: Music,
-    title: "Curated Playlists",
-    description: "Thoughtfully selected music that complements your experience without overpowering conversation.",
   },
   {
     icon: Clock,
@@ -37,9 +17,9 @@ const amenities = [
     description: "From breakfast crepes to evening desserts, our menu evolves throughout the day to satisfy every craving.",
   },
   {
-    icon: Wine,
-    title: "Wine Bar (PM)",
-    description: "As day turns to night, transform your experience with our selection of wines and evening beverages.",
+    icon: Wifi,
+    title: "Catering & Events",
+    description: "Bring Cocohodo to your next gathering. We offer catering for weddings, corporate events, parties, and private functions.",
   },
 ];
 

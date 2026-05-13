@@ -9,27 +9,27 @@ import { HelpCircle, Coffee, GraduationCap, Leaf, MapPin, Gift } from "lucide-re
 
 const faqs = [
   {
-    question: "What makes Cocohodo the best coffee shop in Katy, TX?",
+    question: "What makes Cocohodo the best café in Katy, TX?",
     answer:
-      "Cocohodo Katy offers a unique blend of premium specialty coffee and traditional Korean walnut pastries (Hodo Gwaja), setting us apart from standard cafes. Our beans are ethically sourced and roasted to perfection, providing a rich, smooth flavor that coffee aficionados love. Combined with our modern, minimalist aesthetic and distinct Asian desserts, we provide an elevated coffee experience right here in Katy.",
+      "Cocohodo Katy offers a unique blend of premium specialty coffee, sweet desserts, savory crepes, sandwiches, and more, setting us apart from standard cafes. Our beans are ethically sourced and roasted to perfection, providing a rich, smooth flavor that coffee aficionados love. Combined with our welcoming atmosphere and diverse menu, we provide an elevated café experience right here in Katy.",
     icon: Coffee,
   },
   {
-    question: "What is Hodo Gwaja (Walnut Pastry)?",
+    question: "Why is our Dubai Chocolate the Best?",
     answer:
-      "Hodo Gwaja is a beloved Korean street food—a walnut-shaped pastry filled with sweet red bean paste and a chunky piece of walnut. At Cocohodo, we bake ours fresh daily using a traditional family recipe, creating a crispy outer shell with a warm, soft filling. It's the perfect pairing for our lattes and Americanos.",
+      "We use our secret recipe pistachio paste that is organic and finely crafted, enhancing the chocolate with a rich, nutty depth you won't find anywhere else. Our Dubai Chocolate creations are made with premium ingredients and careful attention to detail, delivering an indulgent experience that keeps customers coming back for more.",
     icon: Gift,
   },
   {
     question: "Is Cocohodo a good place to study or work in Katy?",
     answer:
-      "Absolutely. We are widely recognized as one of Katy's best study spots due to our ample seating, quiet atmosphere, and complimentary high-speed Wi-Fi. We've designed our space with students and professionals in mind, offering plenty of power outlets and bright, natural lighting to keep you productive.",
+      "Absolutely. We are widely recognized as one of Katy's best study spots due to our ample seating, welcoming atmosphere, and complimentary high-speed Wi-Fi. We've designed our space with students and professionals in mind, offering plenty of power outlets and bright, natural lighting to keep you productive.",
     icon: GraduationCap,
   },
   {
     question: "Do you offer vegan or dairy-free options?",
     answer:
-      "Yes! We offer a variety of alternative milks including oat, almond, and soy for all our espresso-based drinks. While our traditional walnut pastries contain egg and wheat, we frequently introduce seasonal specials. Please ask our friendly baristas for the latest vegan-friendly recommendations.",
+      "Yes! We offer a variety of alternative milks including oat, almond, and soy for all our espresso-based drinks. We frequently introduce seasonal specials and options for different dietary needs. Please ask our friendly baristas for the latest vegan-friendly recommendations.",
     icon: Leaf,
   },
   {
@@ -41,7 +41,19 @@ const faqs = [
   {
     question: "Can I order Cocohodo catering for events?",
     answer:
-      "Yes, we offer premium catering services for weddings, corporate events, and parties in the Houston and Katy area. Our Hodo Gwaja boxes make for unique and delicious party favors. Contact us through our website or visit in-store to customize your catering order.",
+      "Yes, we offer premium catering services for weddings, corporate events, and parties in the Houston and Katy area. From coffee bars to dessert spreads and crepe stations, we can customize a package that fits your event. Contact us through our website or visit in-store to customize your catering order.",
+    icon: Gift,
+  },
+  {
+    question: "What kind of food does Cocohodo serve?",
+    answer:
+      "Cocohodo serves a wide variety of café favorites including sweet and savory crepes, sandwiches, waffles, shaved ice (bingsu), cheesecake, affogato, and our signature ice blended drinks. Whether you're in the mood for breakfast, lunch, or dessert, we have something for every craving.",
+    icon: Coffee,
+  },
+  {
+    question: "Does Cocohodo have a rewards program?",
+    answer:
+      "Yes! We offer a rewards program for our regulars. Ask our staff about membership perks and how you can start earning rewards on every visit. It's our way of saying thank you to the amazing community that supports us.",
     icon: Gift,
   },
 ];
@@ -119,7 +131,7 @@ export default function FaqSection() {
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
             Still have questions?{' '}
-            <a href="#footer-contact" className="text-primary font-medium hover:underline">
+            <a href="mailto:sallyaguib@gmail.com" className="text-primary font-medium hover:underline">
               Get in touch
             </a>
           </p>
