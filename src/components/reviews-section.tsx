@@ -63,40 +63,6 @@ export default function ReviewsSection() {
           <div className="greek-divider max-w-md mx-auto mt-6" />
         </div>
 
-        {/* Average Rating Card */}
-        <div className="flex justify-center mb-12">
-          <Card className="max-w-md w-full elegant-shadow border-0 bg-gradient-to-br from-primary to-primary/80 text-white">
-            <CardContent className="p-8 flex flex-col items-center justify-center text-center">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-6xl font-bold">5.0</span>
-                <div className="flex flex-col items-start">
-                  <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 fill-accent text-accent"
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm text-white/80">out of 5</span>
-                </div>
-              </div>
-              <p className="text-white/90">Google reviews</p>
-              <Button asChild variant="outline" className="mt-4 rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary transition-colors">
-                <Link
-                  href="https://maps.google.com/?cid=3059696044019827179"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  Write a Review
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Reviews Carousel */}
         <div className="mb-16">
           <Carousel

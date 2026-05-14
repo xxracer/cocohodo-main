@@ -27,11 +27,6 @@ function UberEatsIcon({ className }: { className?: string }) {
 }
 
 export default function HeroSection() {
-  // Recommended hero images from Unsplash (coffee shop aesthetic)
-  // Option 1: Warm cozy cafe interior - https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80
-  // Option 2: Coffee and pastries - https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1920&q=80
-  // Option 3: Modern minimalist cafe - https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1920&q=80
-
   const heroImageUrl = "https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg";
 
   return (
@@ -50,33 +45,28 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20">
-        <div className="max-w-2xl">
-          {/* Tag */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-6">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-xs font-medium text-accent uppercase tracking-wide">Coffee, Eatery, Dessert</span>
-          </div>
-
+      <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20 flex flex-col items-center text-center">
+        <div className="max-w-4xl mx-auto">
           {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-            Coffee, Eatery
-            <br />
-            <span className="text-accent">&</span> Dessert
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 tracking-tighter drop-shadow-2xl text-center">
+            COFFEE, EATERY, <span className="text-accent drop-shadow-[0_0_20px_rgba(255,182,193,0.8)]">DESSERT</span>
           </h1>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-white/80 mb-8 leading-relaxed">
-            From sweet desserts and savory crepes to sandwiches and specialty coffee drinks,
-            everything you're craving, all in one place.
-          </p>
+          <div className="relative group mb-10 mx-auto max-w-2xl">
+            <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <p className="relative text-lg sm:text-2xl text-white/90 leading-relaxed font-medium backdrop-blur-md bg-white/10 p-6 rounded-2xl border border-white/20 shadow-2xl">
+              From sweet desserts and savory crepes to sandwiches and specialty coffee drinks,
+              everything you’re craving, all in one place.
+            </p>
+          </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-3 mb-6">
+          <div className="flex flex-wrap justify-center gap-4 mb-10">
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-accent text-primary font-semibold px-6 hover:bg-accent/90 shadow-lg"
+              className="rounded-full bg-accent text-primary font-bold px-8 hover:bg-accent/90 shadow-[0_0_20px_rgba(255,182,193,0.5)] transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <a href="#menu">View Menu</a>
             </Button>
@@ -84,7 +74,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary px-6"
+              className="rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary px-8 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <a href="tel:+18323215849" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -94,7 +84,7 @@ export default function HeroSection() {
           </div>
 
           {/* Delivery Apps */}
-          <div className="flex flex-wrap items-center gap-3 mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
             <span className="text-xs text-white/70 uppercase tracking-wide">Order online:</span>
             <a
               href="#"
@@ -120,9 +110,9 @@ export default function HeroSection() {
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/20">
-            <div className="flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm flex-shrink-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-white/20">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
                 <MapPin className="w-4 h-4 text-accent" />
               </div>
               <div>
@@ -130,8 +120,8 @@ export default function HeroSection() {
                 <p className="text-xs text-white/80 leading-snug">1645 Winding Hollow Dr #201<br />Katy, TX 77450</p>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm flex-shrink-0">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
                 <Clock className="w-4 h-4 text-accent" />
               </div>
               <div>
@@ -139,13 +129,13 @@ export default function HeroSection() {
                 <p className="text-xs text-white/80 leading-snug">Mon-Thu: 8AM-8PM<br />Fri-Sat: 8AM-9PM<br />Sun: 8AM-9PM</p>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm flex-shrink-0">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
                 <Phone className="w-4 h-4 text-accent" />
               </div>
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wide">Contact</p>
-                <p className="text-xs text-white/80 leading-snug">(832) 321-5849<br />walk ins welcomed</p>
+                <p className="text-xs text-white/80 leading-snug">(832) 321-5849</p>
               </div>
             </div>
           </div>

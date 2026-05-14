@@ -12,11 +12,6 @@ export default function AboutSection() {
       description: "Ethically sourced beans, roasted to perfection"
     },
     {
-      icon: BookOpen,
-      title: "Library Atmosphere",
-      description: "A quiet haven for study and conversation"
-    },
-    {
       icon: Heart,
       title: "Korean Heritage",
       description: "Authentic recipes passed down through generations"
@@ -26,8 +21,9 @@ export default function AboutSection() {
   return (
     <section id="about" className="bg-gradient-to-b from-background to-secondary/30 walnut-pattern relative overflow-hidden py-20">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-accent/10 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-primary/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-accent/20 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-primary/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto max-w-7xl px-4 relative z-10">
         {/* Section header with Greek-inspired styling */}
@@ -78,11 +74,11 @@ export default function AboutSection() {
                 More Than a Coffee Shop
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Cocohodo is more than a place for coffee. We're a café built around variety, comfort, and community,
+                Cocohodo is more than a place for coffee. We’re a café built around variety, comfort, and community,
                 from sweet desserts and savory crepes to sandwiches, ice cream, and specialty coffee drinks.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Whether you're here for a business meeting, a study session, a family outing, or a quick bite with the kids,
+                Whether you’re here for a business meeting, a study session, a family outing, or a quick bite with the kids,
                 Cocohodo is a welcoming place for every kind of customer and every kind of craving.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
@@ -92,40 +88,45 @@ export default function AboutSection() {
             </div>
 
             {/* Feature cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {features.map((feature, index) => (
                 <div
                   key={feature.title}
-                  className="group p-4 rounded-xl bg-background border border-border hover:border-accent/50 transition-all duration-300 elegant-shadow hover:shadow-lg"
+                  className="group relative p-5 rounded-2xl bg-background/60 backdrop-blur-sm border border-border hover:border-accent/40 transition-all duration-300 elegant-shadow hover:shadow-xl hover:-translate-y-1 overflow-hidden"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <feature.icon className="w-6 h-6 text-accent mb-2 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-semibold text-primary text-sm mb-1">{feature.title}</h4>
-                  <p className="text-xs text-muted-foreground">{feature.description}</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-transparent to-accent/0 group-hover:from-accent/10 transition-all duration-500" />
+                  <div className="relative z-10">
+                    <feature.icon className="w-6 h-6 text-accent mb-3 group-hover:scale-110 transition-transform duration-300" />
+                    <h4 className="font-bold text-primary text-base mb-1">{feature.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                  </div>
                 </div>
               ))}
             </div>
 
             {/* Rewards Program */}
-            <div className="pt-4 border-t border-border">
-              <div className="flex items-center gap-4">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-primary border-2 border-background flex items-center justify-center">
-                    <span className="text-[8px] text-white">☕</span>
+            <div className="pt-6">
+              <div className="relative group p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-primary/5 to-accent/10 border border-primary/20 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:border-accent/30">
+                <div className="flex items-center gap-4">
+                  <div className="flex -space-x-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-primary border-2 border-background flex items-center justify-center shadow-sm hover:scale-110 transition-transform cursor-default">
+                      <span className="text-sm text-white">☕</span>
+                    </div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center shadow-sm hover:scale-110 transition-transform cursor-default">
+                      <span className="text-sm text-white">🥐</span>
+                    </div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-primary border-2 border-background flex items-center justify-center shadow-sm hover:scale-110 transition-transform cursor-default">
+                      <span className="text-sm text-white">🎁</span>
+                    </div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center shadow-sm hover:scale-110 transition-transform cursor-default">
+                      <span className="text-sm text-white">❤️</span>
+                    </div>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center">
-                    <span className="text-[8px] text-white">🥐</span>
+                  <div className="flex-grow">
+                    <p className="font-bold text-primary text-base">Rewards for Our Regulars</p>
+                    <p className="text-sm text-muted-foreground">Ask about our rewards program and membership perks</p>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-primary border-2 border-background flex items-center justify-center">
-                    <span className="text-[8px] text-white">🎁</span>
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center">
-                    <span className="text-[8px] text-white">❤️</span>
-                  </div>
-                </div>
-                <div>
-                  <p className="font-medium text-primary text-sm">Rewards for Our Regulars</p>
-                  <p className="text-xs text-muted-foreground">Ask about our rewards program and membership perks</p>
                 </div>
               </div>
             </div>

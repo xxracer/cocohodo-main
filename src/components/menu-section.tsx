@@ -205,26 +205,27 @@ const CategoryCard = ({
   featured?: boolean;
 }) => (
   <div className={cn(
-    "rounded-2xl p-6 transition-all duration-300 elegant-shadow hover:shadow-xl",
+    "group relative rounded-2xl p-6 transition-all duration-500 elegant-shadow hover:shadow-2xl hover:-translate-y-2",
     featured
-      ? "bg-gradient-to-br from-accent/20 to-primary/10 border-2 border-accent/40"
-      : "bg-background border border-border hover:border-accent/30"
+      ? "bg-gradient-to-br from-accent/30 via-primary/10 to-accent/20 border-2 border-accent/50 shadow-accent/10"
+      : "bg-background/70 backdrop-blur-sm border border-border hover:border-accent/40"
   )}>
-    <div className="flex items-center gap-3 mb-2">
+    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+    <div className="relative z-10 flex items-center gap-3 mb-3">
       <div className={cn(
-        "p-2 rounded-lg",
-        featured ? "bg-accent text-primary" : "bg-primary/10 text-primary"
+        "p-2.5 rounded-xl transition-all duration-300 group-hover:scale-110",
+        featured ? "bg-accent text-primary shadow-md" : "bg-primary/10 text-primary"
       )}>
         <Icon className="w-6 h-6" />
       </div>
-      <div>
-        <h4 className="text-xl font-bold text-primary">{title}</h4>
+      <div className="overflow-hidden">
+        <h4 className="text-xl font-bold text-primary truncate">{title}</h4>
         {description && (
-          <p className="text-xs text-muted-foreground mt-0.5">{description}</p>
+          <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{description}</p>
         )}
       </div>
     </div>
-    <div className="space-y-1 mt-4">
+    <div className="relative z-10 space-y-1 mt-4">
       {items.map((item) => (
         <MenuItem
           key={item.name}
@@ -243,19 +244,20 @@ export default function MenuSection() {
     <section id="menu" className="bg-gradient-to-b from-secondary/30 to-background walnut-pattern py-24">
       <div className="container mx-auto max-w-7xl px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <span className="text-accent font-medium tracking-widest uppercase text-sm">Discover</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 gradient-text">
+        <div className="text-center mb-16 relative">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10" />
+          <span className="text-accent font-bold tracking-widest uppercase text-sm relative z-10">Discover</span>
+          <h2 className="text-5xl md:text-7xl font-black mt-3 mb-6 gradient-text relative z-10">
             Our Menu
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 relative z-10 font-medium leading-relaxed">
             One café. Every craving. From specialty coffee drinks and sweet desserts to savory crepes, sandwiches, and more.
           </p>
-          <div className="greek-divider max-w-md mx-auto mb-6" />
+          <div className="greek-divider max-w-md mx-auto mb-8 relative z-10" />
           <Button
             variant="outline"
-            size="sm"
-            className="rounded-full border-accent/50 text-primary hover:bg-accent hover:text-primary"
+            size="lg"
+            className="rounded-full border-accent/50 text-primary hover:bg-accent hover:text-primary font-bold px-8 shadow-lg transition-all duration-300 hover:scale-105"
             asChild
           >
             <a
@@ -264,8 +266,8 @@ export default function MenuSection() {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <span>View Full Menu</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span className="text-base">View Full Menu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </Button>
         </div>
@@ -341,36 +343,39 @@ export default function MenuSection() {
         )}
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="inline-block rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 p-8 border border-accent/20">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              Ready to Order?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-md">
-              Visit us in store or order online for pickup. Catering available for events!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="rounded-full bg-accent text-primary font-semibold px-8 hover:bg-accent/90"
-                asChild
-              >
-                <a href="#menu">Order Now</a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full border-primary/50 text-primary hover:bg-primary hover:text-white px-8"
-                asChild
-              >
-                <a
-                  href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view?utm_content=DAGWYpV8wDk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h76530eb114"
-                  target="_blank"
-                  rel="noopener noreferrer"
+        <div className="text-center mt-20">
+          <div className="relative inline-block group">
+            <div className="absolute -inset-2 bg-gradient-to-r from-accent via-primary to-accent rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000 animate-pulse"></div>
+            <div className="relative rounded-3xl bg-gradient-to-br from-primary/15 via-background/90 to-accent/15 p-10 border border-accent/30 backdrop-blur-sm">
+              <h3 className="text-3xl font-black text-primary mb-4">
+                Ready to Crave?
+              </h3>
+              <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto leading-relaxed">
+                Visit us in store to experience the magic or order online for a quick pickup. Catering available for all your special events!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-5 justify-center">
+                <Button
+                  size="lg"
+                  className="rounded-full bg-accent text-primary font-bold px-10 hover:bg-accent/90 shadow-[0_0_20px_rgba(255,182,193,0.4)] transition-all duration-300 hover:scale-105 active:scale-95"
+                  asChild
                 >
-                  View Full Menu
-                </a>
-              </Button>
+                  <a href="#menu">Order Now</a>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full border-primary/50 text-primary hover:bg-primary hover:text-white px-10 font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+                  asChild
+                >
+                  <a
+                    href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view?utm_content=DAGWYpV8wDk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h76530eb114"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Full Menu
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
