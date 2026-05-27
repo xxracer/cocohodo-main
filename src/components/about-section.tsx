@@ -10,11 +10,6 @@ export default function AboutSection() {
       icon: Coffee,
       title: "Artisanal Coffee",
       description: "Ethically sourced beans, roasted to perfection"
-    },
-    {
-      icon: Heart,
-      title: "Korean Heritage",
-      description: "Authentic recipes passed down through generations"
     }
   ];
 
@@ -51,19 +46,6 @@ export default function AboutSection() {
                   data-ai-hint={aboutImage.imageHint}
                 />
               )}
-              {/* Overlay badge */}
-              <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur-sm rounded-xl p-4 elegant-shadow">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-xs font-medium text-primary">Established</p>
-                    <p className="text-xl font-bold text-primary">2024</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs font-medium text-primary">Location</p>
-                    <p className="text-base font-bold text-primary">Katy, TX</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 

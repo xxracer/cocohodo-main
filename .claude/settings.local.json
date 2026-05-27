@@ -16,7 +16,11 @@
       "Bash(findstr :9002)",
       "Bash(tasklist)",
       "Bash(findstr 2784)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(dir \"C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\node_modules\")",
+      "Bash(findstr embla *)",
+      "Bash(dir \"C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\node_modules\\\\embla-carousel*\")",
+      "Bash(findstr autoplay *)"
     ]
   }
 }

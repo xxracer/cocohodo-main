@@ -9,7 +9,7 @@ export default function Footer() {
 
   const socialLinks = [
     { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/cocohodokaty' },
-    { name: 'Facebook', icon: Facebook, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/cocohodokaty' },
   ];
 
   const quickLinks = [
@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <a href="#" className="flex items-center group">
+            <a href="https://www.cocohodokaty.com" className="flex items-center group">
               <Image
                 src="https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png"
                 alt="Cocohodo Katy Logo"
@@ -41,7 +41,7 @@ export default function Footer() {
               />
             </a>
             <p className="mt-4 text-muted-foreground text-sm leading-relaxed">
-              Where Stories & Coffee Blend. A Korean-inspired cafe bringing warmth and community to Katy, Texas.
+              Where Stories & Coffee Blend. A cafe bringing warmth and community to Katy, Texas.
             </p>
 
             {/* Social Links */}
@@ -90,10 +90,6 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="tel:+18323215849" className="hover:text-primary transition-colors">(832) 321-5849</a>
-              </li>
-              <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:sallyaguib@gmail.com" className="hover:text-primary transition-colors">sallyaguib@gmail.com</a>
               </li>
             </ul>
           </div>

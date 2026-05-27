@@ -247,7 +247,7 @@ export default function MenuSection() {
         <div className="text-center mb-16 relative">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10" />
           <span className="text-accent font-bold tracking-widest uppercase text-sm relative z-10">Discover</span>
-          <h2 className="text-5xl md:text-7xl font-black mt-3 mb-6 gradient-text relative z-10">
+          <h2 className="text-5xl md:text-7xl font-black mt-3 mb-6 text-primary relative z-10">
             Our Menu
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 relative z-10 font-medium leading-relaxed">

@@ -22,7 +22,7 @@ export default function InstagramSection() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-accent font-medium tracking-widest uppercase text-sm block">Connect</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 gradient-text inline-flex items-center gap-3">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 text-primary inline-flex items-center gap-3">
             <InstagramIcon className="w-10 h-10" />
             Follow Our Journey
           </h2>
@@ -44,29 +44,29 @@ export default function InstagramSection() {
         </div>
 
         {/* Instagram Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {instagramPostIds.map((id, index) => (
             <Link
               key={id}
               href={`https://www.instagram.com/p/${id}/`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square rounded-xl overflow-hidden elegant-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="group relative aspect-square rounded-2xl overflow-hidden elegant-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               {/* Instagram embed as background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all" />
               <iframe
                 src={`https://www.instagram.com/p/${id}/embed`}
-                className="w-full h-full scale-110 group-hover:scale-100 transition-transform duration-500"
+                className="w-full h-full scale-105 group-hover:scale-100 transition-transform duration-500"
                 style={{ border: 'none', overflow: 'hidden' }}
                 allowtransparency="true"
                 allow="encrypted-media"
                 title={`Instagram Post ${id}`}
               />
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                <InstagramIcon className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all flex items-center justify-center">
+                <InstagramIcon className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-xl" />
               </div>
             </Link>
           ))}

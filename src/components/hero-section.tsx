@@ -30,7 +30,7 @@ export default function HeroSection() {
   const heroImageUrl = "https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg";
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-16">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -45,7 +45,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20 flex flex-col items-center text-center">
+      <div className="relative z-5 container mx-auto max-w-7xl px-2 flex flex-col items-center text-center mt-24">
         <div className="max-w-4xl mx-auto">
           {/* Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 tracking-tighter drop-shadow-2xl text-center">
@@ -87,21 +87,27 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
             <span className="text-xs text-white/70 uppercase tracking-wide">Order online:</span>
             <a
-              href="#"
+              href="https://www.doordash.com/store/cocohodo-katy-788983/53002750/?srsltid=AfmBOookSd0cdC8hpTIQgbbG_RCtDP5N8iTf7wagYf-WMSknL2E4NBU3"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
             >
               <DoorDashIcon className="w-4 h-4" />
               DoorDash
             </a>
             <a
-              href="#"
+              href="https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
             >
               <GrubHubIcon className="w-4 h-4" />
               Grubhub
             </a>
             <a
-              href="#"
+              href="https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw?srsltid=AfmBOor2Vehof1Dxp90Xk7yzlaLmD98pT79RzIcNVUX-mtIePmutk-Oq"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
             >
               <UberEatsIcon className="w-4 h-4" />
@@ -110,7 +116,7 @@ export default function HeroSection() {
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-white/20">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-6 border-t border-white/20">
             <div className="flex flex-col items-center text-center gap-2">
               <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
                 <MapPin className="w-4 h-4 text-accent" />
@@ -121,7 +127,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-2">
-              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
+              <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm">
                 <Clock className="w-4 h-4 text-accent" />
               </div>
               <div>
@@ -130,7 +136,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-2">
-              <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm">
+              <div className="p-1.5 rounded-md bg-white/10 backdrop-blur-sm">
                 <Phone className="w-4 h-4 text-accent" />
               </div>
               <div>

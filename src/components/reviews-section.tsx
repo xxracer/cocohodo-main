@@ -54,7 +54,7 @@ export default function ReviewsSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-accent font-medium tracking-widest uppercase text-sm">Testimonials</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary">
             What Katy Is Saying
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -69,8 +69,6 @@ export default function ReviewsSection() {
             opts={{
               align: "start",
               loop: true,
-              autoplay: true,
-              autoplayInterval: 4000,
             }}
             className="w-full"
           >
@@ -153,7 +151,7 @@ export default function ReviewsSection() {
                   <div className="w-2 h-2 rounded-full bg-accent mt-2" />
                   <div>
                     <p className="font-medium text-foreground">Contact</p>
-                    <p>(832) 321-5849 | sallyaguib@gmail.com</p>
+                    <p>(832) 321-5849</p>
                   </div>
                 </div>
               </div>

@@ -94,7 +94,7 @@ export default function FaqSection() {
 
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 gradient-text inline-flex items-center gap-3">
+          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary inline-flex items-center gap-3">
             <HelpCircle className="w-12 h-12" />
             FAQ
           </h2>
@@ -138,10 +138,7 @@ export default function FaqSection() {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
-            Still have questions?{' '}
-            <a href="mailto:sallyaguib@gmail.com" className="text-primary font-medium hover:underline">
-              Get in touch
-            </a>
+            Still have questions? Visit us in person or call us at (832) 321-5849.
           </p>
         </div>
       </div>

@@ -26,13 +26,31 @@ export async function submitInquiry(
     };
   }
 
-  // Here you would typically send an email, save to a database, etc.
-  // For this example, we'll just log it and simulate a success response.
-  console.log("New Inquiry:", parsed.data);
+  // Send data to webhook
+  try {
+    const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL;
+    if (webhookUrl) {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(parsed.data),
+      });
 
-  // Simulate network delay
+      if (!response.ok) {
+        throw new Error(`Webhook returned ${response.status}`);
+      }
+    }
+  } catch (error) {
+    console.error('Failed to send to webhook:', error);
+    // Continue with success message even if webhook fails
+    // Don't fail the form submission if webhook is down
+  }
+
+  // Simulate network delay for better UX
   await new Promise(resolve => setTimeout(resolve, 1000));
-  
+
   return {
     message: "Thank you for your inquiry! We will get back to you shortly.",
     success: true,
