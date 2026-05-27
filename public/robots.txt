@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# AI Crawlers — welcome to index Cocohodo Katy
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# LLM context files
+# https://www.cocohodokaty.com/llms.txt
+# https://www.cocohodokaty.com/llms-full.txt
+
+Sitemap: https://www.cocohodokaty.com/sitemap.xml

@@ -1,13 +1,297 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster"
+import {Toaster} from '@/components/ui/toaster';
+import Script from 'next/script';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#8B4513',
+};
 
 export const metadata: Metadata = {
-  title: 'Cocohodo Katy',
-  description: 'Modern Korean Walnut Pastries & Specialty Coffee.',
+  metadataBase: new URL('https://www.cocohodokaty.com'),
+  title: {
+    default: 'Cocohodo Katy | Best Coffee, Desserts, Crepes & Dubai Chocolate in Katy, TX',
+    template: '%s | Cocohodo Katy',
+  },
+  description:
+    'Cocohodo Katy is a modern cafe in Katy, Texas serving premium specialty coffee, artisanal sweet desserts, savory crepes, sandwiches, shaved ice (bingsu), waffles, and viral Dubai Chocolate creations. Open 7 days a week. Order online via DoorDash, Grubhub, or Uber Eats. Catering available. Free Wi-Fi, study-friendly atmosphere.',
+  keywords: [
+    'cafe katy tx',
+    'coffee shop katy',
+    'dessert bar katy',
+    'crepes katy texas',
+    'dubai chocolate katy',
+    'dubai chocolate houston',
+    'bingsu shaved ice katy',
+    'best coffee katy',
+    'breakfast katy tx',
+    'catering katy',
+    'study spot katy',
+    'wifi cafe katy',
+    'cocohodo',
+    'cocohodo katy',
+    'korean cafe houston',
+    'specialty coffee katy',
+    'waffles katy tx',
+    'smoothies katy',
+    'affogato katy',
+    'nutella latte',
+    'honey lavender latte',
+    'matcha latte katy',
+    'cinco ranch coffee',
+    'fulshear cafe',
+    'west houston coffee shop',
+  ],
+  authors: [{name: 'Cocohodo Katy'}],
+  creator: 'Cocohodo Katy',
+  publisher: 'Cocohodo Katy',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.cocohodokaty.com',
+    siteName: 'Cocohodo Katy',
+    title: 'Cocohodo Katy | Best Coffee, Desserts, Crepes & Dubai Chocolate in Katy, TX',
+    description:
+      'A welcoming cafe in Katy, TX built around variety, comfort, and community. Premium coffee, sweet desserts, savory crepes, sandwiches, bingsu, waffles, and viral Dubai Chocolate. Order online or visit us!',
+    images: [
+      {
+        url: 'https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Cocohodo Katy cafe interior and signature desserts',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cocohodo Katy | Best Coffee, Desserts & Crepes in Katy, TX',
+    description:
+      'Premium specialty coffee, artisanal desserts, savory crepes, and viral Dubai Chocolate in Katy, Texas. Order online or visit us today!',
+    images: ['https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.cocohodokaty.com',
+  },
   icons: {
     icon: 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
+    shortcut: 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
+    apple: 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
   },
+  other: {
+    'msapplication-TileImage': 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
+    'msapplication-TileColor': '#8B4513',
+  },
+};
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Cocohodo Katy',
+  image: [
+    'https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg',
+    'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
+  ],
+  '@id': 'https://www.cocohodokaty.com',
+  url: 'https://www.cocohodokaty.com',
+  telephone: '+1-832-321-5849',
+  priceRange: '$$',
+  servesCuisine: ['Coffee Shop', 'Cafe', 'Dessert Bar', 'Korean', 'American', 'Breakfast', 'Brunch'],
+  acceptsReservations: 'False',
+  hasMenu: 'https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '1645 Winding Hollow Dr #201',
+    addressLocality: 'Katy',
+    addressRegion: 'TX',
+    postalCode: '77450',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 29.7549904,
+    longitude: -95.7524284,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '08:00',
+      closes: '20:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Friday',
+      opens: '08:00',
+      closes: '21:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '09:00',
+      closes: '21:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Sunday',
+      opens: '08:00',
+      closes: '21:00',
+    },
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    reviewCount: '4',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: {'@type': 'Person', name: 'Alexandra M.'},
+      datePublished: '2025-05-13',
+      reviewBody:
+        "An absolute gem in Katy! The desserts are a must-try, and the vibe is so refreshing. It's my new favorite spot.",
+      reviewRating: {'@type': 'Rating', ratingValue: '5', bestRating: '5'},
+    },
+    {
+      '@type': 'Review',
+      author: {'@type': 'Person', name: 'David L.'},
+      datePublished: '2025-04-27',
+      reviewBody:
+        'The coffee is top-notch, smooth and flavorful. What really sets this place apart is the bright, clean atmosphere. Perfect for getting work done.',
+      reviewRating: {'@type': 'Rating', ratingValue: '5', bestRating: '5'},
+    },
+    {
+      '@type': 'Review',
+      author: {'@type': 'Person', name: 'Brian C.'},
+      datePublished: '2025-05-20',
+      reviewBody:
+        'Finally, a coffee shop with real character! The attention to detail in the decor and the menu is incredible. The crepes are dangerously good.',
+      reviewRating: {'@type': 'Rating', ratingValue: '5', bestRating: '5'},
+    },
+    {
+      '@type': 'Review',
+      author: {'@type': 'Person', name: 'Jennifer K.'},
+      datePublished: '2025-05-23',
+      reviewBody:
+        'Best desserts in Katy! The Dubai chocolate crepes are amazing. Great place to relax or catch up with friends.',
+      reviewRating: {'@type': 'Rating', ratingValue: '5', bestRating: '5'},
+    },
+  ],
+  potentialAction: [
+    {
+      '@type': 'OrderAction',
+      target: [
+        {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
+          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
+        },
+      ],
+      deliveryMethod: 'http://schema.org/OnDemandDelivery',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'OrderAction',
+      target: [
+        {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864',
+          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
+        },
+      ],
+      deliveryMethod: 'http://schema.org/OnDemandDelivery',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'OrderAction',
+      target: [
+        {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw',
+          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
+        },
+      ],
+      deliveryMethod: 'http://schema.org/OnDemandDelivery',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+  ],
+  sameAs: [
+    'https://www.instagram.com/cocohodokaty/',
+    'https://facebook.com/cocohodokaty',
+  ],
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Cocohodo Katy',
+  url: 'https://www.cocohodokaty.com',
+  logo: 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
+  sameAs: [
+    'https://www.instagram.com/cocohodokaty/',
+    'https://facebook.com/cocohodokaty',
+    'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
+    'https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864',
+    'https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw',
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+1-832-321-5849',
+    contactType: 'Customer Service',
+    areaServed: 'US-TX',
+    availableLanguage: ['English', 'Spanish'],
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Cocohodo Katy',
+  url: 'https://www.cocohodokaty.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://www.cocohodokaty.com/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.cocohodokaty.com',
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -17,8 +301,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head />
       <body className="antialiased">
+        <Script
+          id="schema-local-business"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(localBusinessSchema)}}
+        />
+        <Script
+          id="schema-organization"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(organizationSchema)}}
+        />
+        <Script
+          id="schema-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(websiteSchema)}}
+        />
+        <Script
+          id="schema-breadcrumb"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}}
+        />
         {children}
         <Toaster />
       </body>

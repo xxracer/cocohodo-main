@@ -20,7 +20,10 @@
       "Bash(dir \"C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\node_modules\")",
       "Bash(findstr embla *)",
       "Bash(dir \"C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\node_modules\\\\embla-carousel*\")",
-      "Bash(findstr autoplay *)"
+      "Bash(findstr autoplay *)",
+      "Bash(cmd //c \"dir C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\public\\\\\")",
+      "Bash(cmd *)",
+      "Bash(npx tsc *)"
     ]
   }
 }
