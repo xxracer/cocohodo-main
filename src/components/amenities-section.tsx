@@ -8,7 +8,7 @@ const amenities = [
   },
   {
     icon: Coffee,
-    title: "Specialty Coffee Drinks",
+    title: "Coffee & Drinks",
     description: "From classic espresso favorites to signature lattes, our baristas craft every cup with care and quality ingredients.",
   },
   {

@@ -47,9 +47,19 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-5 container mx-auto max-w-7xl px-2 flex flex-col items-center text-center mt-24">
         <div className="max-w-4xl mx-auto">
-          {/* Heading */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 tracking-tighter drop-shadow-2xl text-center">
-            COCOHODO
+          {/* Heading — Cocohodo wordmark styled to match the logo */}
+          <h1
+            className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] leading-none mb-8 text-center drop-shadow-2xl"
+            style={{
+              fontFamily: '"Great Vibes", cursive',
+              color: '#E8C26B',
+              textShadow:
+                '0 0 30px rgba(232, 194, 107, 0.4), 0 4px 20px rgba(0, 0, 0, 0.5)',
+              letterSpacing: '0.01em',
+              fontWeight: 400,
+            }}
+          >
+            Cocohodo
           </h1>
 
           {/* Description */}
