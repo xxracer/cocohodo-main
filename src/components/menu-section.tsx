@@ -261,7 +261,7 @@ export default function MenuSection() {
             asChild
           >
             <a
-              href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view"
+              href="https://shorturl.at/JQiu4"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -368,7 +368,7 @@ export default function MenuSection() {
                   asChild
                 >
                   <a
-                    href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view?utm_content=DAGWYpV8wDk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h76530eb114"
+                    href="https://shorturl.at/JQiu4"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

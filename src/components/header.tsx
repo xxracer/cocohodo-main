@@ -53,7 +53,7 @@ export default function Header() {
             className="rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary"
           >
             <a
-              href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view"
+              href="https://shorturl.at/JQiu4"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5"
@@ -108,7 +108,7 @@ export default function Header() {
               className="rounded-full border-white/40 bg-transparent text-white hover:bg-white hover:text-primary"
             >
               <a
-                href="https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view"
+                href="https://shorturl.at/JQiu4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 justify-center py-6"

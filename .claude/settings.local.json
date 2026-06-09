@@ -23,7 +23,10 @@
       "Bash(findstr autoplay *)",
       "Bash(cmd //c \"dir C:\\\\Users\\\\VICTUS\\\\Documents\\\\COCOHODO\\\\cochodo-main\\\\cochodo-main\\\\public\\\\\")",
       "Bash(cmd *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "WebFetch(domain:shorturl.at)",
+      "Bash(curl -sLI \"https://shorturl.at/JQiu4\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://shorturl.at/JQiu4\")"
     ]
   }
 }

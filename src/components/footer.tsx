@@ -8,8 +8,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/cocohodokaty' },
-    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/cocohodokaty' },
+    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/cocohodokatytx' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/cocohodokatytx' },
   ];
 
   const quickLinks = [
@@ -41,7 +41,7 @@ export default function Footer() {
               />
             </a>
             <p className="mt-4 text-muted-foreground text-sm leading-relaxed">
-              Where Stories & Coffee Blend. A cafe bringing warmth and community to Katy, Texas.
+              A modern cafe bringing warmth and community to Katy, Texas.
             </p>
 
             {/* Social Links */}

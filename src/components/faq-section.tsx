@@ -5,62 +5,132 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Script from "next/script";
-import { HelpCircle, Coffee, GraduationCap, Leaf, MapPin, Gift, Heart, Clock } from "lucide-react";
+import {
+  HelpCircle,
+  Coffee,
+  GraduationCap,
+  Leaf,
+  MapPin,
+  Gift,
+  Heart,
+  Clock,
+  Utensils,
+  Users,
+  Sparkles,
+  Car,
+  Calendar,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 const faqs = [
   {
-    question: "Where can I find the best Dubai Chocolate in Katy or Houston?",
+    question: "Why is Cocohodo's Dubai Chocolate considered the best in Katy and Houston?",
     answer:
-      "Cocohodo is widely recognized as the premier destination for authentic Dubai Chocolate in the Katy and Houston area. Our viral Dubai Chocolate Strawberry Cups and Pistachio Crepes are crafted with our organic secret-recipe pistachio paste, creating that rich, nutty depth that has made us a top-rated spot for this trending dessert. If you're looking for the most authentic Dubai chocolate experience in Texas, Cocohodo is the place to be.",
-    icon: Gift,
+      "Our Dubai Chocolate is crafted with a secret-recipe organic pistachio paste that we make in-house. The deep, nutty richness of this pistachio paste is what gives our Dubai Chocolate Strawberry Cups, Pistachio Crepes, and Dubai Chocolate Lattes their signature depth — a flavor profile that has made Cocohodo the go-to destination for Dubai Chocolate across the Houston area.",
+    icon: Sparkles,
+  },
+  {
+    question: "What kind of food does Cocohodo serve besides coffee?",
+    answer:
+      "Cocohodo is a full eatery, not just a coffee shop. We serve breakfast crepes, morning omelettes, avocado toast, savory crepes (chicken, vegetarian, feta and spinach), gourmet sandwiches and wraps, sweet crepes, Belgian waffles, shaved ice (bingsu), handcrafted cheesecakes, affogato, and our famous viral Dubai Chocolate creations. Whether you want a quick bite, a full meal, or a dessert, we have it all under one roof.",
+    icon: Utensils,
   },
   {
     question: "What makes Cocohodo the best cafe for coffee and desserts in Katy, TX?",
     answer:
-      "Cocohodo stands out by offering a curated blend of premium specialty coffee, artisanal sweet desserts, savory crepes, and gourmet sandwiches—all in one welcoming space. Unlike standard cafes, we focus on variety and quality, using ethically sourced beans roasted to perfection and a diverse menu that caters to every craving, from breakfast to late-night treats. This commitment to variety and community makes us Katy's favorite elevated café experience.",
+      "Cocohodo stands out by combining premium specialty coffee, handcrafted sweet desserts, savory crepes, gourmet sandwiches, and viral Dubai Chocolate all in one welcoming space. Unlike standard cafes that focus on drinks only, we focus on variety and quality — from ethically sourced beans to our in-house pistachio paste, every item is crafted with care. This commitment to variety and community makes us Katy's favorite elevated café experience.",
     icon: Coffee,
   },
   {
     question: "Is Cocohodo a good place to study or work remotely in Katy?",
     answer:
-      "Yes, Cocohodo is one of the best study spots in Katy. We've intentionally designed our space for productivity and comfort, offering complimentary high-speed Wi-Fi, ample power outlets at every table, and a bright, welcoming atmosphere. Whether you're a student from a nearby college or a professional working remotely, our cafe provides the perfect balance of quiet focus and energizing coffee.",
+      "Yes, Cocohodo is one of the best study and remote-work spots in Katy. We offer complimentary high-speed Wi-Fi, ample power outlets at nearly every table, and a bright, clean atmosphere that balances quiet focus with an energizing vibe. Whether you're a student, freelancer, or remote professional, our cafe is designed to help you be productive.",
     icon: GraduationCap,
   },
   {
     question: "What are the must-try items at Cocohodo?",
     answer:
-      "If it's your first visit, we highly recommend our viral Dubai Chocolate Strawberry Cups, our savory Chicken n' Cheese Crepes, and any of our signature Lattes. For dessert lovers, our Bingsu (shaved ice) and artisanal cheesecakes are legendary in the Katy community. Every item is crafted to be a visual and culinary treat.",
+      "If it's your first visit, we recommend starting with our viral Dubai Chocolate Strawberry Cup or Dubai Chocolate Pistachio Crepe (the pistachio paste is what makes them legendary). Pair that with one of our Signature Lattes (try the Honey Lavender or Coco Latte), and finish with a Bingsu (shaved ice) if you're sharing or want something light. Our Chicken n' Cheese Crepe is also a customer favorite for something savory.",
     icon: Heart,
   },
   {
     question: "Do you have dairy-free or vegan options for coffee and food?",
     answer:
-      "Absolutely! We believe everyone should enjoy our treats. We offer a variety of premium alternative milks, including oat, almond, and soy, for all our espresso-based drinks. We also frequently introduce vegan-friendly seasonal specials. Just ask our friendly baristas for the best current recommendation based on your dietary preferences.",
+      "Absolutely. We offer premium alternative milks — oat, almond, and soy — for all our espresso-based drinks at no extra charge. We also rotate vegan-friendly seasonal specials throughout the year. Just ask our baristas for the best current recommendation based on your dietary preferences.",
     icon: Leaf,
   },
   {
     question: "Where exactly is Cocohodo located and is there parking?",
     answer:
-      "We are conveniently located in the heart of Katy at 1645 Winding Hollow Dr #201, serving the Cinco Ranch, Fulshear, and West Houston communities. Yes, we have ample free parking available, making it a stress-free destination for a quick coffee run or a long, relaxing afternoon with friends.",
+      "We are conveniently located at 1645 Winding Hollow Dr #201, Katy, TX 77450, in the heart of Katy. We serve the Cinco Ranch, Fulshear, Richmond, and West Houston communities. Yes, we have ample free parking available on-site, making it stress-free to stop by for a quick coffee run or a long, relaxing afternoon.",
     icon: MapPin,
   },
   {
     question: "Can I book Cocohodo for catering or private events?",
     answer:
-      "Yes, Cocohodo offers premium catering services perfect for weddings, corporate events, and private parties throughout the Houston and Katy area. From full coffee bars and dessert spreads to interactive crepe stations, we can customize a package that fits your event's vibe. Contact us via our website or visit us in-store to start planning your custom catering experience.",
+      "Yes. Cocohodo offers premium full-service catering for weddings, corporate events, birthday parties, baby showers, and private functions across Katy and the Greater Houston area. Options include dessert and crepe boxes, full coffee bar setups, interactive crepe stations, bingsu bars, and waffle platters. To start planning, email sallyaguib@gmail.com or call (832) 321-5849.",
+    icon: Gift,
+  },
+  {
+    question: "Do you host private events or venue rentals?",
+    answer:
+      "Yes, Cocohodo is available for partial and full venue rentals for private celebrations. Whether you're planning an intimate gathering, a corporate team-building event, or a larger celebration, we can customize a package to fit your vibe. Reach out via email at sallyaguib@gmail.com or call (832) 321-5849 to start planning.",
+    icon: Calendar,
+  },
+  {
+    question: "Does Cocohodo have a rewards program for regulars?",
+    answer:
+      "Yes! We love our regulars. Cocohodo has a dedicated rewards program and membership perks to thank the community that supports us. Earn points on every coffee, crepe, sandwich, and dessert, and unlock birthday rewards, early access to seasonal specials, and exclusive member-only promotions. Ask any team member during your next visit to enroll — no app download required.",
     icon: Gift,
   },
   {
     question: "What are the business hours for Cocohodo Katy?",
     answer:
-      "We are open 7 days a week to satisfy your cravings! Our typical hours are Monday-Thursday from 8:00 AM to 8:00 PM, and Friday-Sunday from 8:00 AM to 9:00 PM. We recommend checking our website or calling us for any holiday-specific hours.",
+      "We are open 7 days a week. Monday through Thursday we are open from 8:00 AM to 8:00 PM. Friday through Sunday we are open from 8:00 AM to 9:00 PM (Saturdays open at 9:00 AM). For holiday hours, please call (832) 321-5849 or check our Instagram @cocohodokatytx for the latest updates.",
     icon: Clock,
   },
   {
-    question: "Does Cocohodo have a rewards program for regulars?",
+    question: "How can I order Cocohodo for delivery or pickup?",
     answer:
-      "Yes, we love our regulars! Cocohodo has a dedicated rewards program and membership perks to thank the community that supports us. Ask our staff during your next visit about how to join and start earning rewards on every single drink and dessert you enjoy.",
+      "You can order Cocohodo for delivery or pickup through our website, in-house ordering on Clover, or through any of our delivery partners: Uber Eats, DoorDash, and Grubhub. The fastest way to order is directly through Clover (in-house) for the best pricing and to support us directly. Visit our website to start your order.",
+    icon: Car,
+  },
+  {
+    question: "Is Cocohodo kid-friendly?",
+    answer:
+      "Absolutely. Cocohodo is a family-friendly cafe, and we love hosting families. Our menu has plenty of options kids enjoy — waffles with ice cream, smoothies, sweet crepes, ice cream-topped desserts, and more. We have comfortable seating for groups, and our staff is always happy to accommodate little ones.",
+    icon: Users,
+  },
+  {
+    question: "What is Bingsu (shaved ice) and why is it popular at Cocohodo?",
+    answer:
+      "Bingsu is a traditional shaved ice dessert made with ultra-fine, snow-like ice flakes topped with sweet milk, condensed milk, fresh fruit, cookies, coffee, or matcha. Cocohodo's bingsu has become legendary in Katy because of the generous portions and creative flavor combinations — Mango, Berry, Coffee, Green Tea, Cookies & Cream, and the original. It's perfect for sharing and for the Texas heat.",
+    icon: Sparkles,
+  },
+  {
+    question: "Does Cocohodo offer gift cards?",
+    answer:
+      "Yes, Cocohodo gift cards are available in-store and make a great gift for the coffee lover, dessert enthusiast, or foodie in your life. Stop by during business hours to pick one up in any amount. It's also a thoughtful gift for coworkers, teachers, and friends who love discovering new local spots.",
     icon: Gift,
+  },
+  {
+    question: "How can I contact Cocohodo for partnerships, press, or general inquiries?",
+    answer:
+      "For catering, events, partnerships, press, or general inquiries, email us at sallyaguib@gmail.com or call (832) 321-5849 during business hours. You can also DM us on Instagram @cocohodokatytx, Facebook @cocohodokatytx, or TikTok @cocohodokaty — we are very active on social media and usually respond within a few hours.",
+    icon: Mail,
+  },
+  {
+    question: "Is Cocohodo wheelchair accessible?",
+    answer:
+      "Yes. Cocohodo is wheelchair accessible, with a step-free entrance and accessible seating. Our team is happy to assist with any accommodations to make your visit comfortable. If you have specific needs, please call ahead at (832) 321-5849 and we will be ready to welcome you.",
+    icon: Users,
+  },
+  {
+    question: "Can I make a reservation or book a table in advance?",
+    answer:
+      "Cocohodo operates primarily on a walk-in basis, so reservations are not required for regular visits. However, for groups of 8 or more, or for special occasions, we recommend calling (832) 321-5849 in advance so we can prepare a great spot for you. We also accept walk-ins anytime during business hours.",
+    icon: Phone,
   },
 ];
 
@@ -99,7 +169,7 @@ export default function FaqSection() {
             FAQ
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about Katy's premier coffee and dessert destination.
+            Everything you need to know about Katy&rsquo;s premier coffee, dessert, and eatery destination.
           </p>
           <div className="greek-divider max-w-md mx-auto mt-6" />
         </div>
@@ -136,9 +206,16 @@ export default function FaqSection() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 space-y-2">
           <p className="text-muted-foreground">
-            Still have questions? Visit us in person or call us at (832) 321-5849.
+            Still have questions? Visit us in person, call (832) 321-5849, or email{" "}
+            <a
+              href="mailto:sallyaguib@gmail.com"
+              className="font-semibold text-primary hover:underline"
+            >
+              sallyaguib@gmail.com
+            </a>
+            .
           </p>
         </div>
       </div>

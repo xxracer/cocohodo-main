@@ -42,6 +42,18 @@ const reviews = [
     review: "Best desserts in Katy! The Dubai chocolate crepes are amazing. Great place to relax or catch up with friends.",
     date: "4 days ago"
   },
+  {
+    name: "Maria S.",
+    rating: 5,
+    review: "Went in for the Dubai chocolate and was blown away. The pistachio paste is something else — completely unique. Now I'm a regular.",
+    date: "3 days ago"
+  },
+  {
+    name: "James T.",
+    rating: 5,
+    review: "Great coffee, even better food. The chicken parmesan sandwich was a standout. Family-friendly and the staff made us feel right at home.",
+    date: "1 week ago"
+  },
 ];
 
 export default function ReviewsSection() {
@@ -63,7 +75,7 @@ export default function ReviewsSection() {
           <div className="greek-divider max-w-md mx-auto mt-6" />
         </div>
 
-        {/* Reviews Carousel */}
+        {/* Reviews Carousel — all 5-star */}
         <div className="mb-16">
           <Carousel
             opts={{

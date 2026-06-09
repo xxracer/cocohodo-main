@@ -1,4 +1,4 @@
-import { Wifi, Coffee, Clock, Gift } from 'lucide-react';
+import { Wifi, Coffee, Clock, Gift, Users, PartyPopper } from 'lucide-react';
 
 const amenities = [
   {
@@ -8,8 +8,8 @@ const amenities = [
   },
   {
     icon: Coffee,
-    title: "Artisanal Coffee",
-    description: "Ethically sourced beans, expertly roasted and brewed. Every cup tells a story of craftsmanship and care.",
+    title: "Specialty Coffee Drinks",
+    description: "From classic espresso favorites to signature lattes, our baristas craft every cup with care and quality ingredients.",
   },
   {
     icon: Clock,
@@ -19,7 +19,25 @@ const amenities = [
   {
     icon: Gift,
     title: "Catering & Events",
-    description: "Bring Cocohodo to your next gathering. We offer catering for weddings, corporate events, parties, and private functions.",
+    description: "Bring Cocohodo to your next gathering. We offer catering for corporate events, parties, and private functions. We will also host your event for you.",
+  },
+];
+
+const cateringDetails = [
+  {
+    icon: Users,
+    title: "Weddings & Celebrations",
+    description: "Make your big day unforgettable with custom dessert tables, crepe stations, and coffee bars tailored to your theme.",
+  },
+  {
+    icon: PartyPopper,
+    title: "Corporate & Private Events",
+    description: "From team meetings to birthday parties, we bring the Cocohodo experience to your office, venue, or home.",
+  },
+  {
+    icon: Gift,
+    title: "Custom Packages",
+    description: "Build your own package: dessert and crepe boxes, full coffee bar service, or interactive stations for any size group.",
   },
 ];
 
@@ -46,7 +64,7 @@ export default function AmenitiesSection() {
         </div>
 
         {/* Amenities Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {amenities.map((amenity, index) => (
             <div
               key={amenity.title}
@@ -73,6 +91,51 @@ export default function AmenitiesSection() {
               <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-accent/0 group-hover:bg-accent/50 transition-all duration-300" />
             </div>
           ))}
+        </div>
+
+        {/* Catering & Events Sub-Section */}
+        <div className="relative">
+          <div className="text-center mb-12">
+            <span className="text-accent font-bold tracking-widest uppercase text-sm">Catering & Events</span>
+            <h3 className="text-3xl md:text-4xl font-black mt-3 mb-4 text-primary">
+              Bring Cocohodo to You
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              From intimate gatherings to large-scale celebrations, we offer full-service catering across Katy and Greater Houston.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {cateringDetails.map((item) => (
+              <div
+                key={item.title}
+                className="group relative p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-background to-accent/10 border border-primary/20 backdrop-blur-sm elegant-shadow hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
+              >
+                <div className="relative z-10">
+                  <div className="p-3 bg-gradient-to-br from-accent/30 to-primary/20 rounded-xl inline-flex mb-4 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold text-primary mb-3">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Catering CTA */}
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-4">
+              Ready to plan your event? Get in touch for a custom quote.
+            </p>
+            <a
+              href="mailto:sallyaguib@gmail.com"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-primary font-semibold hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              Request Catering Info
+            </a>
+          </div>
         </div>
 
         {/* Bottom CTA */}

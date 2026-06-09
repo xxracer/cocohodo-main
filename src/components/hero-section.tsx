@@ -10,18 +10,18 @@ function DoorDashIcon({ className }: { className?: string }) {
   );
 }
 
-function GrubHubIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 16.5h-9a1.5 1.5 0 01-1.5-1.5V9a1.5 1.5 0 011.5-1.5h9A1.5 1.5 0 0118 9v6a1.5 1.5 0 01-1.5 1.5z"/>
-    </svg>
-  );
-}
-
 function UberEatsIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.36.54-.96.86-1.6.86H9.5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h5.54c.64 0 1.24.32 1.6.86l2.18 3.27c.32.48.32 1.12 0 1.6l-2.18 3.23z"/>
+    </svg>
+  );
+}
+
+function CloverIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2V7zm0 4h2v6h-2v-6zm-4 0h2v2H7v-2zm0 4h2v2H7v-2zm8-4h2v2h-2v-2zm0 4h2v2h-2v-2z"/>
     </svg>
   );
 }
@@ -49,7 +49,7 @@ export default function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 tracking-tighter drop-shadow-2xl text-center">
-            COFFEE, EATERY, <span className="text-accent drop-shadow-[0_0_20px_rgba(255,182,193,0.8)]">DESSERT</span>
+            COCOHODO
           </h1>
 
           {/* Description */}
@@ -57,7 +57,7 @@ export default function HeroSection() {
             <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <p className="relative text-lg sm:text-2xl text-white/90 leading-relaxed font-medium backdrop-blur-md bg-white/10 p-6 rounded-2xl border border-white/20 shadow-2xl">
               From sweet desserts and savory crepes to sandwiches and specialty coffee drinks,
-              everything you’re craving, all in one place.
+              everything you&rsquo;re craving, all in one place.
             </p>
           </div>
 
@@ -87,7 +87,16 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
             <span className="text-xs text-white/70 uppercase tracking-wide">Order online:</span>
             <a
-              href="https://www.doordash.com/store/cocohodo-katy-788983/53002750/?srsltid=AfmBOookSd0cdC8hpTIQgbbG_RCtDP5N8iTf7wagYf-WMSknL2E4NBU3"
+              href="https://www.clover.com/online-ordering/cocohodo-katy-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
+            >
+              <CloverIcon className="w-4 h-4" />
+              Clover
+            </a>
+            <a
+              href="https://www.doordash.com/store/cocohodo-katy-788983/53002750/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJjb2NvaG9kbyBjb2ZmZWUgc2hvcCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJjb2NvIGhvZG8gY29mZmVlIHNob3AiLCJ2ZXJ0aWNhbF9pZCI6LTk5OSwidmVydGljYWxfbmFtZSI6ImFsbCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsNCwxMDAzMzMsMTc1LDE5MywxOTVdfQ==&pickup=false"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
@@ -96,16 +105,7 @@ export default function HeroSection() {
               DoorDash
             </a>
             <a
-              href="https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
-            >
-              <GrubHubIcon className="w-4 h-4" />
-              Grubhub
-            </a>
-            <a
-              href="https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw?srsltid=AfmBOor2Vehof1Dxp90Xk7yzlaLmD98pT79RzIcNVUX-mtIePmutk-Oq"
+              href="https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
@@ -141,7 +141,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wide">Contact</p>
-                <p className="text-xs text-white/80 leading-snug">(832) 321-5849</p>
+                <p className="text-xs text-white/80 leading-snug">(832) 321-5849<br />Walk-Ins Welcome</p>
               </div>
             </div>
           </div>

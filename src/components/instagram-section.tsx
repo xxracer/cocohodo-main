@@ -32,12 +32,12 @@ export default function InstagramSection() {
           <div className="greek-divider max-w-md mx-auto mb-8" />
           <Button asChild variant="outline" className="rounded-full border-primary/30 hover:bg-primary hover:text-white transition-colors">
             <Link
-              href="https://www.instagram.com/cocohodokaty/"
+              href="https://www.instagram.com/cocohodokatytx/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              @cocohodokaty
+              @cocohodokatytx
               <ExternalLink className="w-4 h-4" />
             </Link>
           </Button>

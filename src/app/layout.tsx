@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Cocohodo Katy',
   },
   description:
-    'Cocohodo Katy is a modern cafe in Katy, Texas serving premium specialty coffee, artisanal sweet desserts, savory crepes, sandwiches, shaved ice (bingsu), waffles, and viral Dubai Chocolate creations. Open 7 days a week. Order online via DoorDash, Grubhub, or Uber Eats. Catering available. Free Wi-Fi, study-friendly atmosphere.',
+    'Cocohodo Katy is a modern cafe in Katy, Texas serving premium specialty coffee, handcrafted sweet desserts, savory crepes, sandwiches, shaved ice (bingsu), waffles, and viral Dubai Chocolate creations. Open 7 days a week. Order online via DoorDash, Grubhub, or Uber Eats. Catering available. Free Wi-Fi, study-friendly atmosphere.',
   keywords: [
     'cafe katy tx',
     'coffee shop katy',
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cocohodo Katy | Best Coffee, Desserts & Crepes in Katy, TX',
     description:
-      'Premium specialty coffee, artisanal desserts, savory crepes, and viral Dubai Chocolate in Katy, Texas. Order online or visit us today!',
+      'Premium specialty coffee, handcrafted desserts, savory crepes, and viral Dubai Chocolate in Katy, Texas. Order online or visit us today!',
     images: ['https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg'],
   },
   alternates: {
@@ -108,9 +108,8 @@ const localBusinessSchema = {
   url: 'https://www.cocohodokaty.com',
   telephone: '+1-832-321-5849',
   priceRange: '$$',
-  servesCuisine: ['Coffee Shop', 'Cafe', 'Dessert Bar', 'Korean', 'American', 'Breakfast', 'Brunch'],
+  servesCuisine: ['Coffee Shop', 'Cafe', 'Dessert Bar', 'American', 'Breakfast', 'Brunch'],
   acceptsReservations: 'False',
-  hasMenu: 'https://www.canva.com/design/DAGWYpV8wDk/34ZOzNepQmP3hHEYQxELfw/view',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '1645 Winding Hollow Dr #201',
@@ -197,7 +196,37 @@ const localBusinessSchema = {
       target: [
         {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
+          urlTemplate: 'https://www.clover.com/online-ordering/cocohodo-katy-3',
+          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
+        },
+      ],
+      deliveryMethod: 'http://schema.org/OnDemandDelivery',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'OrderAction',
+      target: [
+        {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg',
+          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
+        },
+      ],
+      deliveryMethod: 'http://schema.org/OnDemandDelivery',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'OrderAction',
+      target: [
+        {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.doordash.com/store/cocohodo-katy-788983/53002750/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJjb2NvaG9kbyBjb2ZmZWUgc2hvcCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJjb2NvIGhvZG8gY29mZmVlIHNob3AiLCJ2ZXJ0aWNhbF9pZCI6LTk5OSwidmVydGljYWxfbmFtZSI6ImFsbCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsNCwxMDAzMzMsMTc1LDE5MywxOTVdfQ==&pickup=false',
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
         },
       ],
@@ -222,25 +251,12 @@ const localBusinessSchema = {
         priceCurrency: 'USD',
       },
     },
-    {
-      '@type': 'OrderAction',
-      target: [
-        {
-          '@type': 'EntryPoint',
-          urlTemplate: 'https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw',
-          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
-        },
-      ],
-      deliveryMethod: 'http://schema.org/OnDemandDelivery',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        priceCurrency: 'USD',
-      },
-    },
   ],
+  hasMenu: 'https://shorturl.at/JQiu4',
   sameAs: [
-    'https://www.instagram.com/cocohodokaty/',
-    'https://facebook.com/cocohodokaty',
+    'https://www.instagram.com/cocohodokatytx/',
+    'https://facebook.com/cocohodokatytx',
+    'https://www.tiktok.com/@cocohodokaty',
   ],
 };
 
@@ -251,11 +267,13 @@ const organizationSchema = {
   url: 'https://www.cocohodokaty.com',
   logo: 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
   sameAs: [
-    'https://www.instagram.com/cocohodokaty/',
-    'https://facebook.com/cocohodokaty',
+    'https://www.instagram.com/cocohodokatytx/',
+    'https://facebook.com/cocohodokatytx',
+    'https://www.tiktok.com/@cocohodokaty',
+    'https://www.clover.com/online-ordering/cocohodo-katy-3',
+    'https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg',
     'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
     'https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864',
-    'https://www.ubereats.com/store/cocohodo/40GVpZCoSgS3eimIyDAjDw',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -301,6 +319,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16828747729"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16828747729');`,
+          }}
+        />
+      </head>
       <body className="antialiased">
         <Script
           id="schema-local-business"
