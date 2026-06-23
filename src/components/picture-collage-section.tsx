@@ -14,7 +14,7 @@ export default function PictureCollageSection() {
   return (
     <section id="collage" className="bg-background py-12 sm:py-16">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 auto-rows-[100px] md:auto-rows-[130px] lg:auto-rows-[140px]">
           {collageImages.map((image, index) => {
             const spans = [
               "col-span-1 row-span-1",
