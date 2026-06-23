@@ -107,22 +107,37 @@ export default function Footer() {
         {/* Bottom section with form */}
         <div className="border-t border-border pt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Newsletter / Events */}
+            {/* Stay Connected */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Catering & Events</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Stay Connected</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Bring Cocohodo to your next event! We offer catering for weddings, corporate events, and parties.
+                Follow along for new menu drops, community moments, and behind-the-scenes vibes from your favorite Katy cafe.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium">
-                  🥐 Dessert & Crepe Boxes
-                </span>
-                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium">
-                  ☕ Coffee Bar
-                </span>
-                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium">
-                  🎉 Private Events
-                </span>
+                <Link
+                  href="https://instagram.com/cocohodokatytx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium hover:bg-accent/20 transition-colors"
+                >
+                  📸 Instagram
+                </Link>
+                <Link
+                  href="https://facebook.com/cocohodokatytx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium hover:bg-accent/20 transition-colors"
+                >
+                  👍 Facebook
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@cocohodokaty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-full bg-accent/10 text-primary text-xs font-medium hover:bg-accent/20 transition-colors"
+                >
+                  🎵 TikTok
+                </Link>
               </div>
             </div>
 

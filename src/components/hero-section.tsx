@@ -27,47 +27,36 @@ function CloverIcon({ className }: { className?: string }) {
 }
 
 export default function HeroSection() {
-  const heroImageUrl = "https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg";
-
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={heroImageUrl}
+          src="/Pictures/internal store photo.JPG"
           alt="Cocohodo Katy cafe interior"
           fill
           className="object-cover"
           priority
         />
-        {/* Warm overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/50" />
+        {/* Warm, lighter overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-primary/50" />
       </div>
 
       {/* Content */}
-      <div className="relative z-5 container mx-auto max-w-7xl px-2 flex flex-col items-center text-center mt-24">
+      <div className="relative z-10 container mx-auto max-w-7xl px-4 flex flex-col items-center text-center mt-32">
         <div className="max-w-4xl mx-auto">
-          {/* Heading — Cocohodo wordmark styled to match the logo */}
+          {/* Logo wordmark */}
           <h1
-            className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] leading-none mb-8 text-center drop-shadow-2xl"
-            style={{
-              fontFamily: '"Great Vibes", cursive',
-              color: '#E8C26B',
-              textShadow:
-                '0 0 30px rgba(232, 194, 107, 0.4), 0 4px 20px rgba(0, 0, 0, 0.5)',
-              letterSpacing: '0.01em',
-              fontWeight: 400,
-            }}
+            className="font-logo text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] text-white leading-none mb-8 text-center tracking-wide uppercase drop-shadow-2xl"
           >
             Cocohodo
           </h1>
 
           {/* Description */}
           <div className="relative group mb-10 mx-auto max-w-2xl">
-            <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-            <p className="relative text-lg sm:text-2xl text-white/90 leading-relaxed font-medium backdrop-blur-md bg-white/10 p-6 rounded-2xl border border-white/20 shadow-2xl">
-              From sweet desserts and savory crepes to sandwiches and specialty coffee drinks,
-              everything you&rsquo;re craving, all in one place.
+            <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-white/20 to-accent/30 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <p className="relative text-xl sm:text-2xl md:text-3xl text-white/95 leading-relaxed font-light backdrop-blur-md bg-white/10 p-6 rounded-2xl border border-white/20 shadow-2xl">
+              Your spot for coffee, bites, desserts and good vibes.
             </p>
           </div>
 
@@ -95,7 +84,7 @@ export default function HeroSection() {
 
           {/* Delivery Apps */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
-            <span className="text-xs text-white/70 uppercase tracking-wide">Order online:</span>
+            <span className="text-xs text-white/80 uppercase tracking-wide">Order online:</span>
             <a
               href="https://www.clover.com/online-ordering/cocohodo-katy-3"
               target="_blank"
@@ -160,7 +149,7 @@ export default function HeroSection() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-        <a href="#about" className="flex flex-col items-center text-white/70 hover:text-white transition-colors">
+        <a href="#collage" className="flex flex-col items-center text-white/70 hover:text-white transition-colors">
           <span className="text-[10px] uppercase tracking-widest mb-2">Discover More</span>
           <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
             <div className="w-1.5 h-2.5 bg-white/60 rounded-full animate-bounce" />

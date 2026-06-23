@@ -66,8 +66,8 @@ export default function FooterContactForm() {
 
   return (
     <div id="footer-contact">
-      <h3 className="text-lg font-semibold text-foreground">Catering & Events</h3>
-      <p className="mt-2 text-sm text-muted-foreground">Have a question or want to book an event? Send us a message.</p>
+      <h3 className="text-lg font-semibold text-foreground">Send Us a Message</h3>
+      <p className="mt-2 text-sm text-muted-foreground">Have a question or just want to say hi? We&apos;d love to hear from you.</p>
       <Form {...form}>
         <form action={formAction} className="space-y-4 mt-4">
           <FormField

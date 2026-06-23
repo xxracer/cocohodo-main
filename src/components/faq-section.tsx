@@ -18,7 +18,6 @@ import {
   Users,
   Sparkles,
   Car,
-  Calendar,
   Mail,
   Phone,
 } from "lucide-react";
@@ -67,18 +66,6 @@ const faqs = [
     icon: MapPin,
   },
   {
-    question: "Can I book Cocohodo for catering or private events?",
-    answer:
-      "Yes. Cocohodo offers premium full-service catering for weddings, corporate events, birthday parties, baby showers, and private functions across Katy and the Greater Houston area. Options include dessert and crepe boxes, full coffee bar setups, interactive crepe stations, bingsu bars, and waffle platters. To start planning, email sallyaguib@gmail.com or call (832) 321-5849.",
-    icon: Gift,
-  },
-  {
-    question: "Do you host private events or venue rentals?",
-    answer:
-      "Yes, Cocohodo is available for partial and full venue rentals for private celebrations. Whether you're planning an intimate gathering, a corporate team-building event, or a larger celebration, we can customize a package to fit your vibe. Reach out via email at sallyaguib@gmail.com or call (832) 321-5849 to start planning.",
-    icon: Calendar,
-  },
-  {
     question: "Does Cocohodo have a rewards program for regulars?",
     answer:
       "Yes! We love our regulars. Cocohodo has a dedicated rewards program and membership perks to thank the community that supports us. Earn points on every coffee, crepe, sandwich, and dessert, and unlock birthday rewards, early access to seasonal specials, and exclusive member-only promotions. Ask any team member during your next visit to enroll — no app download required.",
@@ -93,7 +80,7 @@ const faqs = [
   {
     question: "How can I order Cocohodo for delivery or pickup?",
     answer:
-      "You can order Cocohodo for delivery or pickup through our website, in-house ordering on Clover, or through any of our delivery partners: Uber Eats, DoorDash, and Grubhub. The fastest way to order is directly through Clover (in-house) for the best pricing and to support us directly. Visit our website to start your order.",
+      "You can order Cocohodo for delivery or pickup through our website, in-house ordering on Clover, or through our delivery partners Uber Eats and DoorDash. The fastest way to order is directly through Clover (in-house) for the best pricing and to support us directly. Visit our website to start your order.",
     icon: Car,
   },
   {
@@ -117,7 +104,7 @@ const faqs = [
   {
     question: "How can I contact Cocohodo for partnerships, press, or general inquiries?",
     answer:
-      "For catering, events, partnerships, press, or general inquiries, email us at sallyaguib@gmail.com or call (832) 321-5849 during business hours. You can also DM us on Instagram @cocohodokatytx, Facebook @cocohodokatytx, or TikTok @cocohodokaty — we are very active on social media and usually respond within a few hours.",
+      "For partnerships, press, or general inquiries, email us at sallyaguib@gmail.com or call (832) 321-5849 during business hours. You can also DM us on Instagram @cocohodokatytx, Facebook @cocohodokatytx, or TikTok @cocohodokaty — we are very active on social media and usually respond within a few hours.",
     icon: Mail,
   },
   {

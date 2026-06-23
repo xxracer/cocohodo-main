@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import { Instagram as InstagramIcon, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 // Instagram Post IDs extracted from user provided URLs
 const instagramPostIds = [
@@ -27,7 +34,7 @@ export default function InstagramSection() {
             Follow Our Journey
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Stay updated with our latest creations, events, and community moments.
+            Stay updated with our latest creations, community moments, and behind-the-scenes vibes.
           </p>
           <div className="greek-divider max-w-md mx-auto mb-8" />
           <Button asChild variant="outline" className="rounded-full border-primary/30 hover:bg-primary hover:text-white transition-colors">
@@ -43,34 +50,53 @@ export default function InstagramSection() {
           </Button>
         </div>
 
-        {/* Instagram Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {instagramPostIds.map((id, index) => (
-            <Link
-              key={id}
-              href={`https://www.instagram.com/p/${id}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative aspect-square rounded-2xl overflow-hidden elegant-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              {/* Instagram embed as background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all" />
-              <iframe
-                src={`https://www.instagram.com/p/${id}/embed`}
-                className="w-full h-full scale-105 group-hover:scale-100 transition-transform duration-500"
-                style={{ border: 'none', overflow: 'hidden' }}
-                allowtransparency="true"
-                allow="encrypted-media"
-                title={`Instagram Post ${id}`}
-              />
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all flex items-center justify-center">
-                <InstagramIcon className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-xl" />
-              </div>
-            </Link>
-          ))}
-        </div>
+        {/* Instagram Carousel */}
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {instagramPostIds.map((id, index) => (
+              <CarouselItem
+                key={id}
+                className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+              >
+                <div
+                  className="group relative rounded-2xl overflow-hidden elegant-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  {/* Embedded iframe with cropped header to hide the ugly Follow button */}
+                  <div className="relative w-full aspect-square bg-background">
+                    <iframe
+                      src={`https://www.instagram.com/p/${id}/embed`}
+                      className="absolute w-full h-[140%] -top-[40%] left-0 border-0"
+                      style={{ border: 'none', overflow: 'hidden' }}
+                      allow="encrypted-media"
+                      title={`Instagram Post ${id}`}
+                    />
+                  </div>
+                  {/* Click overlay to open the real post */}
+                  <Link
+                    href={`https://www.instagram.com/p/${id}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center"
+                    aria-label={`Open Instagram post ${id}`}
+                  >
+                    <InstagramIcon className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-xl" />
+                  </Link>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-4 mt-8">
+            <CarouselPrevious className="static translate-y-0 -left-0 top-0 mx-0 h-10 w-10 rounded-full border-primary/30 hover:bg-primary hover:text-white" />
+            <CarouselNext className="static translate-y-0 -right-0 top-0 mx-0 h-10 w-10 rounded-full border-primary/30 hover:bg-primary hover:text-white" />
+          </div>
+        </Carousel>
 
         {/* CTA */}
         <div className="text-center mt-10">

@@ -1,7 +1,10 @@
 import Header from '@/components/header';
 import HeroSection from '@/components/hero-section';
-import AboutSection from '@/components/about-section';
+import PictureCollageSection from '@/components/picture-collage-section';
+import MembershipSection from '@/components/membership-section';
+import CommunitySection from '@/components/community-section';
 import MenuSection from '@/components/menu-section';
+import NollyPasteSection from '@/components/nolly-paste-section';
 import AmenitiesSection from '@/components/amenities-section';
 import ReviewsSection from '@/components/reviews-section';
 import InstagramSection from '@/components/instagram-section';
@@ -14,11 +17,14 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <AboutSection />
+        <PictureCollageSection />
+        <MembershipSection />
+        <CommunitySection />
         <MenuSection />
-        <InstagramSection />
+        <NollyPasteSection />
         <AmenitiesSection />
         <ReviewsSection />
+        <InstagramSection />
         <FaqSection />
       </main>
       <Footer />

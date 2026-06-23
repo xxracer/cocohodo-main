@@ -4,59 +4,58 @@
 
 @layer base {
   :root {
-    /* Cocohodo Katy - Inspired by Agora Houston: warm, rustic, elegant */
-    /* Earth tones with Greek revival warmth meets minimalism */
-    --background: 36 33% 98%;
-    --foreground: 28 12% 18%;
-    --card: 36 33% 97%;
-    --card-foreground: 28 12% 18%;
-    --popover: 36 33% 98%;
-    --popover-foreground: 28 12% 18%;
-    /* Primary: Warm walnut brown - signature color */
-    --primary: 28 35% 35%;
-    --primary-foreground: 36 33% 98%;
-    /* Secondary: Soft cream with Greek marble feel */
-    --secondary: 45 25% 94%;
-    --secondary-foreground: 28 12% 25%;
-    /* Muted: Warm beige for backgrounds */
-    --muted: 40 20% 90%;
-    --muted-foreground: 28 12% 45%;
-    /* Accent: Golden honey - like walnut pastry crust */
-    --accent: 38 60% 75%;
-    --accent-foreground: 28 12% 20%;
+    /* Cocohodo Katy — Bright, warm, and welcoming palette */
+    --background: 40 30% 98%;
+    --foreground: 25 15% 20%;
+    --card: 40 25% 97%;
+    --card-foreground: 25 15% 20%;
+    --popover: 40 30% 98%;
+    --popover-foreground: 25 15% 20%;
+    /* Primary: Warm caramel brown */
+    --primary: 28 40% 42%;
+    --primary-foreground: 40 30% 98%;
+    /* Secondary: Bright cream */
+    --secondary: 42 30% 95%;
+    --secondary-foreground: 25 15% 25%;
+    /* Muted: Soft warm beige */
+    --muted: 38 25% 92%;
+    --muted-foreground: 25 12% 42%;
+    /* Accent: Bright golden honey */
+    --accent: 38 75% 68%;
+    --accent-foreground: 25 15% 18%;
     --destructive: 5 70% 55%;
-    --destructive-foreground: 36 33% 98%;
-    --border: 40 25% 85%;
-    --input: 40 25% 88%;
-    --ring: 28 35% 35%;
-    /* Chart colors - warm earth palette */
-    --chart-1: 28 50% 45%;
+    --destructive-foreground: 40 30% 98%;
+    --border: 35 25% 88%;
+    --input: 35 25% 90%;
+    --ring: 28 40% 42%;
+    /* Chart colors - warm, bright palette */
+    --chart-1: 28 50% 48%;
     --chart-2: 160 35% 40%;
     --chart-3: 220 25% 50%;
-    --chart-4: 38 60% 60%;
+    --chart-4: 38 70% 62%;
     --chart-5: 8 45% 55%;
     --radius: 0.75rem;
   }
   .dark {
     --background: 28 15% 12%;
-    --foreground: 36 25% 94%;
+    --foreground: 40 25% 94%;
     --card: 28 15% 14%;
-    --card-foreground: 36 25% 94%;
+    --card-foreground: 40 25% 94%;
     --popover: 28 15% 14%;
-    --popover-foreground: 36 25% 94%;
-    --primary: 28 35% 55%;
+    --popover-foreground: 40 25% 94%;
+    --primary: 28 40% 55%;
     --primary-foreground: 28 15% 12%;
     --secondary: 28 15% 22%;
-    --secondary-foreground: 36 25% 94%;
+    --secondary-foreground: 40 25% 94%;
     --muted: 28 15% 25%;
-    --muted-foreground: 36 25% 75%;
-    --accent: 38 50% 55%;
+    --muted-foreground: 40 25% 75%;
+    --accent: 38 60% 60%;
     --accent-foreground: 28 15% 12%;
     --destructive: 5 65% 50%;
-    --destructive-foreground: 36 25% 94%;
+    --destructive-foreground: 40 25% 94%;
     --border: 28 15% 30%;
     --input: 28 15% 25%;
-    --ring: 28 35% 55%;
+    --ring: 28 40% 55%;
   }
 }
 
@@ -75,67 +74,16 @@
 }
 
 @layer components {
-  /* Greek Revival inspired decorative border */
+  /* Elegant decorative border */
   .greek-border {
     @apply border-2 border-primary/20;
-    position: relative;
   }
-  .greek-border::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: linear-gradient(45deg, hsl(var(--primary)/0.1), transparent, hsl(var(--primary)/0.1));
-    border-radius: inherit;
-    z-index: -1;
-  }
-
-  /* Walnut texture pattern */
-  .walnut-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B7355' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-
-
-  /* Soft shadow for cards */
   .elegant-shadow {
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1), 0 2px 10px -4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 40px -10px rgba(28, 20%, 42%, 0.12);
   }
-
-  /* Greek key inspired divider */
-  .greek-divider {
-    height: 2px;
-    background: linear-gradient(90deg, transparent, hsl(var(--primary)/0.3), transparent);
-    position: relative;
-  }
-  .greek-divider::after {
-    content: '◆';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: hsl(var(--primary)/0.5);
-    font-size: 0.75rem;
-    background: hsl(var(--background));
-    padding: 0 1rem;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .animation-delay-150 {
-    animation-delay: 150ms;
-  }
-
-  .animation-delay-300 {
-    animation-delay: 300ms;
-  }
-
-  .backdrop-blur-subtle {
-    backdrop-filter: blur(8px);
+  /* Subtle warm dot pattern */
+  .walnut-pattern {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
   }
 }

@@ -6,7 +6,7 @@ import Script from 'next/script';
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#8B4513',
+  themeColor: '#A67B5B',
 };
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Cocohodo Katy',
   },
   description:
-    'Cocohodo Katy is a modern cafe in Katy, Texas serving premium specialty coffee, handcrafted sweet desserts, savory crepes, sandwiches, shaved ice (bingsu), waffles, and viral Dubai Chocolate creations. Open 7 days a week. Order online via DoorDash, Grubhub, or Uber Eats. Catering available. Free Wi-Fi, study-friendly atmosphere.',
+    'Cocohodo Katy is a modern cafe in Katy, Texas serving coffee and drinks, breakfast, sweet desserts, savory crepes, sandwiches, shaved ice (bingsu), waffles, and viral Dubai Chocolate creations. Open 7 days a week. Order online via Clover, DoorDash, or Uber Eats. Free Wi-Fi, study-friendly atmosphere.',
   keywords: [
     'cafe katy tx',
     'coffee shop katy',
@@ -27,13 +27,10 @@ export const metadata: Metadata = {
     'bingsu shaved ice katy',
     'best coffee katy',
     'breakfast katy tx',
-    'catering katy',
     'study spot katy',
     'wifi cafe katy',
     'cocohodo',
     'cocohodo katy',
-    'korean cafe houston',
-    'specialty coffee katy',
     'waffles katy tx',
     'smoothies katy',
     'affogato katy',
@@ -65,7 +62,7 @@ export const metadata: Metadata = {
     siteName: 'Cocohodo Katy',
     title: 'Cocohodo Katy | Best Coffee, Desserts, Crepes & Dubai Chocolate in Katy, TX',
     description:
-      'A welcoming cafe in Katy, TX built around variety, comfort, and community. Premium coffee, sweet desserts, savory crepes, sandwiches, bingsu, waffles, and viral Dubai Chocolate. Order online or visit us!',
+      'A welcoming cafe in Katy, TX built around variety, comfort, and community. Coffee and drinks, breakfast, sweet desserts, savory crepes, sandwiches, bingsu, waffles, and viral Dubai Chocolate. Order online or visit us!',
     images: [
       {
         url: 'https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg',
@@ -79,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cocohodo Katy | Best Coffee, Desserts & Crepes in Katy, TX',
     description:
-      'Premium specialty coffee, handcrafted desserts, savory crepes, and viral Dubai Chocolate in Katy, Texas. Order online or visit us today!',
+      'Coffee and drinks, breakfast, handcrafted desserts, savory crepes, and viral Dubai Chocolate in Katy, Texas. Order online or visit us today!',
     images: ['https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg'],
   },
   alternates: {
@@ -92,7 +89,7 @@ export const metadata: Metadata = {
   },
   other: {
     'msapplication-TileImage': 'https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png',
-    'msapplication-TileColor': '#8B4513',
+    'msapplication-TileColor': '#A67B5B',
   },
 };
 
@@ -236,21 +233,6 @@ const localBusinessSchema = {
         priceCurrency: 'USD',
       },
     },
-    {
-      '@type': 'OrderAction',
-      target: [
-        {
-          '@type': 'EntryPoint',
-          urlTemplate: 'https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864',
-          actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
-        },
-      ],
-      deliveryMethod: 'http://schema.org/OnDemandDelivery',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        priceCurrency: 'USD',
-      },
-    },
   ],
   hasMenu: 'https://shorturl.at/JQiu4',
   sameAs: [
@@ -273,7 +255,6 @@ const organizationSchema = {
     'https://www.clover.com/online-ordering/cocohodo-katy-3',
     'https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg',
     'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
-    'https://www.grubhub.com/restaurant/cocohodo-1645-winding-hollow-dr-ste-201-katy/10363864',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -320,7 +301,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Google Fonts — Great Vibes for the Cocohodo wordmark */}
+        {/* Google Fonts — Cormorant Garamond (premium serif, closest free alternative to The Seasons) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -328,7 +309,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
         {/* Google tag (gtag.js) */}
