@@ -12,7 +12,7 @@ export default function AboutSection() {
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-primary/10 to-transparent rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="text-accent font-medium tracking-widest uppercase text-xs">Our Story</span>
@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div className="greek-divider max-w-md mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Image side with elegant frame */}
           <div className="relative order-first lg:order-last">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl blur-xl" />

@@ -56,21 +56,21 @@ const menuCategories = [
 export default function MenuSection() {
   return (
     <section id="menu" className="bg-secondary/30 walnut-pattern py-24">
-      <div className="container mx-auto max-w-7xl px-4">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-accent font-bold tracking-widest uppercase text-sm">Discover</span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mt-3 mb-6 text-primary">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mt-3 mb-6 text-primary">
             Our Menu
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 font-medium leading-relaxed px-2">
             One café. Every craving. From morning breakfast and refreshing drinks to savory lunch favorites and indulgent desserts.
           </p>
           <div className="greek-divider max-w-md mx-auto mb-8" />
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full border-accent/50 text-primary hover:bg-accent hover:text-primary font-bold px-8 shadow-lg transition-all duration-300 hover:scale-105"
+            className="rounded-full border-accent/50 text-primary hover:bg-accent hover:text-primary font-bold px-6 sm:px-8 shadow-lg transition-all duration-300 hover:scale-105"
             asChild
           >
             <a

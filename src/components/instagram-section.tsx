@@ -25,15 +25,15 @@ export default function InstagramSection() {
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent/10 to-transparent rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-accent font-medium tracking-widest uppercase text-sm block">Connect</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 text-primary inline-flex items-center gap-3">
-            <InstagramIcon className="w-10 h-10" />
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-4 text-primary inline-flex items-center gap-3">
+            <InstagramIcon className="w-8 h-8 sm:w-10 sm:h-10" />
             Follow Our Journey
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 px-2">
             Stay updated with our latest creations, community moments, and behind-the-scenes vibes.
           </p>
           <div className="greek-divider max-w-md mx-auto mb-8" />

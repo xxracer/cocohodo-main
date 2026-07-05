@@ -25,9 +25,9 @@ export default function Footer() {
       <div className="absolute inset-0 walnut-pattern opacity-50" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-b from-accent/5 to-transparent rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-7xl px-6 py-16 relative z-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 relative z-10">
         {/* Top section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
 
           {/* Brand Column */}
           <div className="lg:col-span-1">

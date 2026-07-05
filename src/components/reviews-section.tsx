@@ -62,14 +62,14 @@ export default function ReviewsSection() {
       {/* Decorative elements */}
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-accent/10 to-transparent rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-accent font-medium tracking-widest uppercase text-sm">Testimonials</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary">
             What Katy Is Saying
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Real reviews from our amazing community of coffee lovers and dessert enthusiasts.
           </p>
           <div className="greek-divider max-w-md mx-auto mt-6" />
@@ -84,9 +84,9 @@ export default function ReviewsSection() {
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {reviews.map((review, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
                     <Card className="h-full flex flex-col elegant-shadow border-border hover:border-accent/30 transition-colors">
                       <CardHeader>
@@ -115,8 +115,8 @@ export default function ReviewsSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="-left-4 hidden md:flex" />
-            <CarouselNext className="-right-4 hidden md:flex" />
+            <CarouselPrevious className="-left-2 md:-left-4 hidden md:flex" />
+            <CarouselNext className="-right-2 md:-right-4 hidden md:flex" />
           </Carousel>
         </div>
 

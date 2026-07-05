@@ -141,7 +141,7 @@ export default function FaqSection() {
       {/* Decorative elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-b from-accent/5 to-transparent rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-4xl px-4 relative z-10">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 relative z-10">
         {/* Inject Schema Markup */}
         <Script
           id="faq-schema"
@@ -150,12 +150,12 @@ export default function FaqSection() {
         />
 
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary inline-flex items-center gap-3">
-            <HelpCircle className="w-12 h-12" />
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4 text-primary inline-flex items-center gap-3">
+            <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12" />
             FAQ
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
             Everything you need to know about Katy&rsquo;s premier coffee, dessert, and eatery destination.
           </p>
           <div className="greek-divider max-w-md mx-auto mt-6" />
@@ -172,18 +172,18 @@ export default function FaqSection() {
                   value={`item-${index}`}
                   className="group border border-border/50 rounded-2xl px-4 md:px-6 transition-all duration-300 hover:border-accent/40 hover:bg-secondary/40"
                 >
-                  <AccordionTrigger className="text-left text-base md:text-lg font-medium py-6 px-2 hover:no-underline">
-                    <div className="flex items-center gap-4">
+                  <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-medium py-4 sm:py-6 px-2 hover:no-underline">
+                    <div className="flex items-center gap-3 sm:gap-4">
                       {/* Icon with background */}
-                      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform border border-accent/20">
-                        <faq.icon className="w-6 h-6 text-primary" />
+                      <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform border border-accent/20">
+                        <faq.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                       </div>
                       <span className="text-foreground group-hover:text-primary transition-colors font-semibold">
                         {faq.question}
                       </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="text-base md:text-lg text-muted-foreground leading-relaxed pb-6 px-2 pl-16 border-t border-border/30 pt-4">
+                  <AccordionContent className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed pb-4 sm:pb-6 px-2 pl-14 sm:pl-16 border-t border-border/30 pt-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

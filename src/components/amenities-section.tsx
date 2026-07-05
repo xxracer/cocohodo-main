@@ -31,15 +31,15 @@ export default function AmenitiesSection() {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 relative">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
           <span className="text-accent font-bold tracking-widest uppercase text-sm relative z-10">Experience</span>
-          <h2 className="text-5xl md:text-7xl font-black mt-3 mb-6 text-primary relative z-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mt-3 mb-6 text-primary relative z-10">
             Amenities & Features
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 relative z-10 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 relative z-10 font-medium leading-relaxed px-2">
             More than just a coffee shop – we are a complete experience designed for your comfort and creativity.
           </p>
           <div className="greek-divider max-w-md mx-auto mt-6 relative z-10" />

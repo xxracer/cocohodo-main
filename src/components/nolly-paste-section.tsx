@@ -26,8 +26,8 @@ export default function NollyPasteSection() {
       <div className="absolute top-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Image */}
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/20 to-primary/10 rounded-3xl blur-xl" />
@@ -43,16 +43,16 @@ export default function NollyPasteSection() {
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <div className="space-y-4">
               <span className="text-accent font-bold tracking-widest uppercase text-sm">House-Made Favorite</span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Meet Nolly, Our House-Made Pistachio Paste
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Made in small batches right here at Cocohodo, Nolly is the rich, luxurious pistachio paste behind your favorite treats. Moreover, it&rsquo;s gluten-free, preservative-free, and vegan!
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Love it so much you want a jar of your own? Grab one in-store, or order online through Amazon and have it delivered straight to your door.
               </p>
             </div>

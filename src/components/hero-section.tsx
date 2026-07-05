@@ -43,11 +43,11 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto max-w-7xl px-4 flex flex-col items-center text-center mt-32">
+      <div className="relative z-10 container mx-auto max-w-7xl px-4 flex flex-col items-center text-center mt-24 sm:mt-28 md:mt-32">
         <div className="max-w-4xl mx-auto">
           {/* Logo wordmark */}
           <h1
-            className="font-logo text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] text-white leading-none mb-8 text-center tracking-wide uppercase drop-shadow-2xl"
+            className="font-logo text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white leading-none mb-6 sm:mb-8 text-center tracking-wide uppercase drop-shadow-2xl"
           >
             Cocohodo
           </h1>

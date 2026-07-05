@@ -26,8 +26,8 @@ export default function MembershipSection() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="container mx-auto max-w-7xl px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Image */}
           <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/20 to-primary/10 rounded-3xl blur-xl" />
@@ -43,16 +43,16 @@ export default function MembershipSection() {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-2 space-y-8">
+          <div className="order-1 lg:order-2 space-y-6 lg:space-y-8">
             <div className="space-y-4">
               <span className="text-accent font-bold tracking-widest uppercase text-sm">Membership</span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Join Houston&rsquo;s First Coffee Club
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl">
                 The Nolly Club is our way of saying thank you to the regulars who make Cocohodo feel like home. As Houston&rsquo;s first coffee club, membership means more than just a punch card it&rsquo;s perks made for the people who show up again and again.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl">
                 Whether you&rsquo;re stopping in for your morning latte or settling in for an afternoon study session, the Nolly Club makes every visit a little sweeter. Become a founding member today and be part of something Houston hasn&rsquo;t seen before.
               </p>
             </div>
