@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 import { Button } from "@/components/ui/button";
@@ -19,6 +19,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { submitInquiry } from "@/app/actions";
+import { Mail, CheckCircle } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -33,9 +34,20 @@ const initialState = {
   success: false,
 };
 
+const STORAGE_KEY = "cocohodo_contact_sent";
+
 export default function FooterContactForm() {
   const [state, formAction] = useActionState(submitInquiry, initialState);
   const { toast } = useToast();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Check if user has already submitted in this browser session / localStorage
+    const alreadySent = localStorage.getItem(STORAGE_KEY);
+    if (alreadySent) {
+      setIsSubmitted(true);
+    }
+  }, []);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -54,6 +66,8 @@ export default function FooterContactForm() {
           description: state.message,
         });
         form.reset();
+        setIsSubmitted(true);
+        localStorage.setItem(STORAGE_KEY, "true");
       } else {
         toast({
           title: "Error",
@@ -63,6 +77,24 @@ export default function FooterContactForm() {
       }
     }
   }, [state, toast, form]);
+
+  if (isSubmitted) {
+    return (
+      <div id="footer-contact" className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/10 border border-accent/30 text-center">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-lg">
+            <CheckCircle className="w-8 h-8 text-primary" />
+          </div>
+          <div className="space-y-2">
+            <h3 className="text-xl font-bold text-primary">Thank You!</h3>
+            <p className="text-muted-foreground">
+              Thank you, we will contact you soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div id="footer-contact">
@@ -114,6 +146,7 @@ export default function FooterContactForm() {
             )}
           />
           <Button type="submit" disabled={form.formState.isSubmitting} className="w-full">
+            <Mail className="w-4 h-4 mr-2" />
             {form.formState.isSubmitting ? "Sending..." : "Send Message"}
           </Button>
         </form>
