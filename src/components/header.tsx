@@ -20,16 +20,16 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md shadow-lg">
-      <div className="container mx-auto flex h-20 sm:h-24 md:h-28 lg:h-32 items-center justify-between px-3 sm:px-4 gap-2">
+      <div className="container mx-auto flex h-16 sm:h-20 md:h-24 lg:h-28 items-center justify-between px-3 sm:px-4 gap-2">
         {/* Logo */}
-        <a href="#" className="flex items-center flex-shrink-0">
+        <a href="#" className="flex items-center flex-shrink-0 max-w-[50%]">
           <Image
-            src="https://static.wixstatic.com/media/c5947c_8cfb0ad6973445e3aea4f437c94e314f~mv2.png"
+            src="https://static.wixstatic.com/media/c5947c_9da5f6bfed2f4f1c98cb35e231a1439f~mv2.jpg"
             alt="Cocohodo Katy Logo"
-            width={300}
-            height={100}
+            width={360}
+            height={120}
             priority
-            className="object-contain brightness-0 invert w-30 sm:w-44 md:w-40 lg:w-58 h-auto"
+            className="object-contain max-h-16 sm:max-h-20 md:max-h-24 lg:max-h-28 w-auto mix-blend-multiply scale-110 origin-left"
           />
         </a>
 
