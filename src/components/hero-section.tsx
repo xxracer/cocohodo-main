@@ -86,7 +86,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
             <span className="text-xs text-white/80 uppercase tracking-wide">Order online:</span>
             <a
-              href="https://www.clover.com/online-ordering/cocohodo-katy-3"
+              href="https://cocohodo-katy-3.cloveronline.com/menu/all"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
@@ -95,7 +95,7 @@ export default function HeroSection() {
               Clover
             </a>
             <a
-              href="https://www.doordash.com/store/cocohodo-katy-788983/53002750/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJjb2NvaG9kbyBjb2ZmZWUgc2hvcCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJjb2NvIGhvZG8gY29mZmVlIHNob3AiLCJ2ZXJ0aWNhbF9pZCI6LTk5OSwidmVydGljYWxfbmFtZSI6ImFsbCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsNCwxMDAzMzMsMTc1LDE5MywxOTVdfQ==&pickup=false"
+              href="https://www.doordash.com/store/cocohodo-katy-788983/111074146/?cursor=eyJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDM3LDExMDA0NSwxMTAwNTIsMTEwMDU1LDExMDA2Miw0LDEwMDMzMywxOTMsMTk1XSwiY2Fyb3VzZWxfaWQiOiJmYXZvcml0ZXMiLCJjYXJvdXNlbF90aXRsZSI6IllvdXIgcGFzdCBvcmRlcnMifQ==&pickup=false"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
@@ -104,7 +104,7 @@ export default function HeroSection() {
               DoorDash
             </a>
             <a
-              href="https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg"
+              href="https://www.ubereats.com/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg?diningMode=PICKUP&ps=1&sc=SEARCH_SUGGESTION"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"

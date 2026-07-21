@@ -76,7 +76,7 @@ export default function MembershipSection() {
                 size="lg"
                 className="rounded-full bg-accent text-primary font-bold px-8 hover:bg-accent/90 shadow-lg transition-all duration-300 hover:scale-105"
               >
-                <a href="https://www.clover.com/online-ordering/cocohodo-katy-3" target="_blank" rel="noopener noreferrer">
+                <a href="https://cocohodo-katy-3.cloveronline.com/menu/all" target="_blank" rel="noopener noreferrer">
                   Join the Nolly Club
                 </a>
               </Button>

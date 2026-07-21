@@ -156,7 +156,7 @@ export default function ReviewsSection() {
                   <div className="w-2 h-2 rounded-full bg-accent mt-2" />
                   <div>
                     <p className="font-medium text-foreground">Hours</p>
-                    <p>Mon-Thu: 8AM-8PM | Fri-Sat: 8AM-9PM | Sun: 8AM-9PM</p>
+                    <p>Mon-Thu: 8AM-8PM | Fri: 8AM-9PM | Sat: 9AM-9PM | Sun: 9AM-8PM</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -170,18 +170,18 @@ export default function ReviewsSection() {
             </div>
 
             {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden elegant-shadow">
+            <div className="relative overflow-hidden elegant-shadow rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-xl rounded-bl-xl max-w-sm mt-4 md:mt-8">
               <Image
-                src="https://static.wixstatic.com/media/c5947c_edd0d476732c440f859177b133acdec8~mv2.jpg"
-                alt="Cocohodo atmosphere"
-                width={800}
-                height={500}
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
+                src="/Pictures/Picture Collage/IMG_7676.jpeg"
+                alt="Cocohodo matcha atmosphere"
+                width={600}
+                height={400}
+                className="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <p className="font-medium">Come experience the warmth</p>
-                <p className="text-sm text-white/80">Free parking available</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute bottom-5 left-6 right-6 text-white">
+                <p className="font-semibold text-lg">Come experience the warmth</p>
+                <p className="text-sm text-white/90">Free parking available</p>
               </div>
             </div>
           </div>

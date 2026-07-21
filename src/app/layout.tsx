@@ -142,8 +142,8 @@ const localBusinessSchema = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: 'Sunday',
-      opens: '08:00',
-      closes: '21:00',
+      opens: '09:00',
+      closes: '20:00',
     },
   ],
   aggregateRating: {
@@ -193,7 +193,7 @@ const localBusinessSchema = {
       target: [
         {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://www.clover.com/online-ordering/cocohodo-katy-3',
+          urlTemplate: 'https://cocohodo-katy-3.cloveronline.com/menu/all',
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
         },
       ],
@@ -208,7 +208,7 @@ const localBusinessSchema = {
       target: [
         {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg',
+          urlTemplate: 'https://www.ubereats.com/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg?diningMode=PICKUP&ps=1&sc=SEARCH_SUGGESTION',
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
         },
       ],
@@ -223,7 +223,7 @@ const localBusinessSchema = {
       target: [
         {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://www.doordash.com/store/cocohodo-katy-788983/53002750/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJjb2NvaG9kbyBjb2ZmZWUgc2hvcCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJjb2NvIGhvZG8gY29mZmVlIHNob3AiLCJ2ZXJ0aWNhbF9pZCI6LTk5OSwidmVydGljYWxfbmFtZSI6ImFsbCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsNCwxMDAzMzMsMTc1LDE5MywxOTVdfQ==&pickup=false',
+          urlTemplate: 'https://www.doordash.com/store/cocohodo-katy-788983/111074146/?cursor=eyJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDM3LDExMDA0NSwxMTAwNTIsMTEwMDU1LDExMDA2Miw0LDEwMDMzMywxOTMsMTk1XSwiY2Fyb3VzZWxfaWQiOiJmYXZvcml0ZXMiLCJjYXJvdXNlbF90aXRsZSI6IllvdXIgcGFzdCBvcmRlcnMifQ==&pickup=false',
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform'],
         },
       ],
@@ -252,9 +252,9 @@ const organizationSchema = {
     'https://www.instagram.com/cocohodokatytx/',
     'https://facebook.com/cocohodokatytx',
     'https://www.tiktok.com/@cocohodokaty',
-    'https://www.clover.com/online-ordering/cocohodo-katy-3',
-    'https://www.order.store/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg',
-    'https://www.doordash.com/store/cocohodo-katy-788983/53002750/',
+    'https://cocohodo-katy-3.cloveronline.com/menu/all',
+    'https://www.ubereats.com/store/cocohodo-katy/tKj58KewQVC4v4YqlPogHg?diningMode=PICKUP&ps=1&sc=SEARCH_SUGGESTION',
+    'https://www.doordash.com/store/cocohodo-katy-788983/111074146/?cursor=eyJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDM3LDExMDA0NSwxMTAwNTIsMTEwMDU1LDExMDA2Miw0LDEwMDMzMywxOTMsMTk1XSwiY2Fyb3VzZWxfaWQiOiJmYXZvcml0ZXMiLCJjYXJvdXNlbF90aXRsZSI6IllvdXIgcGFzdCBvcmRlcnMifQ==&pickup=false',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
